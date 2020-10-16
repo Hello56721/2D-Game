@@ -8,7 +8,7 @@ find_path(GLFW_BINARY_DIR "libglfw3.a")
 find_path(GLAD_INCLUDE_DIR "glad/glad.h")
 find_path(GLAD_SOURCE_DIR "glad.c")
 
-include_directories("${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}")
+include_directories("${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "include")
 
 link_directories("${GLFW_BINARY_DIR}")
 
