@@ -28,13 +28,13 @@ int main() {
         return -1;
     }
 
-    float vertices = {
+    float vertices[] = {
          0.5f,  0.5f, 0.0f,
          0.5f, -0.5f, 0.0f,
         -0.5f, -0.5f, 0.0f,
         -0.5f,  0.5f, 0.0f
     };
-    unsigned int indices = {
+    unsigned int indices[] = {
         0, 1, 2,
         0, 3, 2
     };
