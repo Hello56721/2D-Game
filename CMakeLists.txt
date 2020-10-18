@@ -29,11 +29,14 @@ add_executable(
 add_library(
     "EngineGraphics" SHARED
     "src/EngineGraphics/Utils.cpp"
+    "src/EngineGraphics/Shader.cpp"
 )
 add_library(
     "EngineUtils" SHARED
     "src/EngineUtils/FileUtils.cpp"
 )
 
-target_link_libraries("2d-game" "EngineGraphics")
+target_link_libraries("2d-game" "EngineGraphics" "EngineUtils")
+target_link_libraries("EngineGraphics" "EngineUtils")
+
 target_link_libraries("test" "EngineUtils")
