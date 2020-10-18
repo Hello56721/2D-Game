@@ -1,3 +1,5 @@
+#include <EngineUtils/FileUtils.hpp>
+
 #include <EngineGraphics/Utils.hpp>
 
 void EngineGraphics::printErrors(std::string_view file, std::string_view line, int lineNum) {
@@ -31,4 +33,31 @@ void EngineGraphics::printErrors(std::string_view file, std::string_view line, i
         std::cout << "ERROR: " << error << " at " << file << "[" << lineNum << "]";
         std::cout << " " << line << std::endl;
     }
+}
+
+unsigned int EngineGraphics::createShader(std::string_view sourcePath, unsigned int type) {
+    // Load the shader source
+    std::string source_str = EngineUtils::loadAsString(sourcePath);
+    const char* source = source_str.c_str();
+    
+    unsigned int shader = glCall(glCreateShader(type));
+    glCall(glShaderSource(shader, 1, &source, nullptr));
+    glCall(glCompileShader(shader));
+    
+    // Check for compiliation errors
+    int success;
+    glCall(glGetShaderiv(shader, GL_COMPILE_STATUS, &success));
+    if (success == GL_FALSE) { // success equal to GL_FALSE if there are compiliation errors
+        int infoLogLength;
+        glCall(glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &infoLogLength));
+        char* infoLog = new char[infoLogLength];
+        glCall(glGetShaderInfoLog(shader, infoLogLength, &infoLogLength, infoLog));
+        
+        std::cout << "WARNING: Compiling " << sourcePath << "resulted in:\n";
+        std::cout << infoLog << "\n\n";
+        
+        delete[] infoLog;
+    }
+    
+    return shader;
 }
