@@ -3,6 +3,8 @@
 #include <EngineGraphics/Utils.hpp>
 #include <GLFW/glfw3.h>
 
+#include <EngineGraphics/Shader.hpp>
+
 int main() {
     if (!glfwInit()) {
         std::cout << "ERROR: Could not initialize GLFW." << std::endl;
@@ -46,6 +48,8 @@ int main() {
         0, 3, 2
     };
     
+    EngineGraphics::Shader shader("../shaders/basic/vertex.glsl", "../shaders/basic/fragment.glsl", "shader program");
+    
     unsigned int vertexArray;
     glCall(glGenVertexArrays(1, &vertexArray));
     glCall(glBindVertexArray(vertexArray));
@@ -67,6 +71,8 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         glCall(glClearColor(1.0f, 0.5f, 0.0f, 1.0f));
         glCall(glClear(GL_COLOR_BUFFER_BIT));
+        
+        shader.use();
 
         glCall(glBindVertexArray(vertexArray));
         glCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
