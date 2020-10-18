@@ -22,10 +22,18 @@ add_executable(
     "src/2d-game/main.cpp"
     "${GLAD_SOURCE_DIR}/glad.c"
 )
-
+add_executable(
+    "test"
+    "test/fileutils.cpp"
+)
 add_library(
     "EngineGraphics" SHARED
     "src/EngineGraphics/Utils.cpp"
 )
+add_library(
+    "EngineUtils" SHARED
+    "src/EngineUtils/FileUtils.cpp"
+)
 
 target_link_libraries("2d-game" "EngineGraphics")
+target_link_libraries("test" "EngineUtils")
