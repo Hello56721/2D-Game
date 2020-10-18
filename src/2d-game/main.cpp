@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <glad/glad.h>
+#include <EngineGraphics/Utils.hpp>
 #include <GLFW/glfw3.h>
 
 int main() {
@@ -46,10 +46,12 @@ int main() {
         0, 3, 2
     };
     
+    glCall(glBindBuffer(GL_UNSIGNED_INT, 0));
+    
     glfwShowWindow(window);
     while (!glfwWindowShouldClose(window)) {
-        glClearColor(1.0f, 0.5f, 0.0f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glCall(glClearColor(1.0f, 0.5f, 0.0f, 1.0f));
+        glCall(glClear(GL_COLOR_BUFFER_BIT));
 
         glfwSwapBuffers(window);
         glfwPollEvents();
