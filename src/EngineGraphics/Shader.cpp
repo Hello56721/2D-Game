@@ -39,6 +39,8 @@ Shader::Shader(Shader&& src) {
 Shader& Shader::operator=(Shader&& rhs) {
     id = rhs.id;
     rhs.id = 0;
+    
+    return *this;
 }
 
 void Shader::use() const {
