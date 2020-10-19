@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 
 #include <EngineGraphics/Shader.hpp>
+#include <EngineGraphics/Mesh.hpp>
 
 int main() {
     if (!glfwInit()) {
@@ -37,7 +38,7 @@ int main() {
         return -1;
     }
 
-    float vertices[] = {
+    /*float vertices[] = {
          0.5f,  0.5f, 0.0f,
          0.5f, -0.5f, 0.0f,
         -0.5f, -0.5f, 0.0f,
@@ -46,11 +47,24 @@ int main() {
     unsigned int indices[] = {
         0, 1, 2,
         0, 3, 2
+    };*/
+    
+    std::vector<Vertex> vertices = {
+        {{ 0.5f,  0.5f, 0.0f}},
+        {{ 0.5f, -0.5f, 0.0f}},
+        {{-0.5f, -0.5f, 0.0f}},
+        {{-0.5f,  0.5f, 0.0f}}
     };
+    std::vector<unsigned int> indices = {
+        0, 1, 2,
+        0, 3, 2
+    };
+    
+    EngineGraphics::Mesh mesh(vertices, indices);
     
     EngineGraphics::Shader shader("../shaders/basic/vertex.glsl", "../shaders/basic/fragment.glsl", "shader program");
     
-    unsigned int vertexArray;
+    /*unsigned int vertexArray;
     glCall(glGenVertexArrays(1, &vertexArray));
     glCall(glBindVertexArray(vertexArray));
     
@@ -65,7 +79,7 @@ int main() {
     glCall(glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW));
     
     glCall(glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0));
-    glCall(glEnableVertexAttribArray(0));
+    glCall(glEnableVertexAttribArray(0));*/
     
     glfwShowWindow(window);
     while (!glfwWindowShouldClose(window)) {
@@ -74,8 +88,9 @@ int main() {
         
         shader.use();
 
-        glCall(glBindVertexArray(vertexArray));
-        glCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
+        //glCall(glBindVertexArray(vertexArray));
+        //glCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
+        mesh.render();
 
         glfwSwapBuffers(window);
         glfwPollEvents();
