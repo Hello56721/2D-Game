@@ -37,6 +37,9 @@ Shader::Shader(Shader&& src) {
 }
 
 Shader& Shader::operator=(Shader&& rhs) {
+    glCall(glUseProgram(0));
+    glCall(glDeleteProgram(id));
+    
     id = rhs.id;
     rhs.id = 0;
     

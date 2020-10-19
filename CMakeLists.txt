@@ -6,12 +6,13 @@ project("2d-game")
 set(CMAKE_CXX_STANDARD 17)
 
 # find all of the libraries
-find_path(GLFW_INCLUDE_DIR "GLFW/glfw3.h")
-find_path(GLFW_BINARY_DIR "libglfw3.a")
-find_path(GLAD_INCLUDE_DIR "glad/glad.h")
-find_path(GLAD_SOURCE_DIR "glad.c")
+find_path(GLFW_INCLUDE_DIR NAMES "GLFW/glfw3.h")
+find_path(GLFW_BINARY_DIR NAMES "libglfw3.a")
+find_path(GLAD_INCLUDE_DIR NAMES "glad/glad.h")
+find_path(GLAD_SOURCE_DIR NAMES "glad.c")
+find_path(GLM_INCLUDE_DIR NAMES"glm/glm.hpp")
 
-include_directories("${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "include")
+include_directories("${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "${GLM_INCLUDE_DIR}" "include")
 
 link_directories("${GLFW_BINARY_DIR}")
 
@@ -30,6 +31,7 @@ add_library(
     "EngineGraphics" SHARED
     "src/EngineGraphics/Utils.cpp"
     "src/EngineGraphics/Shader.cpp"
+    "src/EngineGraphics/Mesh.cpp"
 )
 add_library(
     "EngineUtils" SHARED
