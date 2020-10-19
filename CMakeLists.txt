@@ -31,6 +31,7 @@ add_library(
     "EngineGraphics" SHARED
     "src/EngineGraphics/Utils.cpp"
     "src/EngineGraphics/Shader.cpp"
+    "src/EngineGraphics/Mesh.cpp"
 )
 add_library(
     "EngineUtils" SHARED
