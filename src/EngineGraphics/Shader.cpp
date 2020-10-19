@@ -32,11 +32,17 @@ Shader::Shader(std::string_view vertexPath, std::string_view fragmentPath, std::
 }
 
 Shader::Shader(Shader&& src) {
+    glCall(glUseProgram(0));
+    glCall(glDeleteProgram(id));
+    
     id = src.id;
     src.id = 0;
 }
 
 Shader& Shader::operator=(Shader&& rhs) {
+    glCall(glUseProgram(0));
+    glCall(glDeleteProgram(id));
+    
     id = rhs.id;
     rhs.id = 0;
     
