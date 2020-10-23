@@ -1,15 +1,18 @@
 #ifndef INCLUDED_2d_game_Display_hpp
 #define INCLUDED_2d_game_Display_hpp
 
+#include <EngineGraphics/Utils.hpp>
 #include <GLFW/glfw3.h>
+
+#include <iostream>
 
 namespace Display {
     // the window handle
     extern GLFWwindow* window;
     
     // width and height of the window
-    unsigned int width;
-    unsigned int height;
+    extern unsigned int width;
+    extern unsigned int height;
     
     // Initialize and create the window
     void create(bool fullscreen);
