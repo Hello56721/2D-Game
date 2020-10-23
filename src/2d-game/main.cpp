@@ -49,21 +49,24 @@ int main() {
         0, 3, 2
     };
     
-    EngineGraphics::Mesh mesh(vertices, indices);
+    EngineGraphics::Mesh* mesh = new EngineGraphics::Mesh(vertices, indices);
     
-    EngineGraphics::Shader shader("../shaders/basic/vertex.glsl", "../shaders/basic/fragment.glsl", "shader program");
+    EngineGraphics::Shader* shader = new EngineGraphics::Shader("../shaders/basic/vertex.glsl", "../shaders/basic/fragment.glsl", "shader program");
     
     glfwShowWindow(window);
     while (!glfwWindowShouldClose(window)) {
         glCall(glClearColor(1.0f, 0.5f, 0.0f, 1.0f));
         glCall(glClear(GL_COLOR_BUFFER_BIT));
         
-        shader.use();
-        mesh.render();
+        shader->use();
+        mesh->render();
 
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    
+    delete mesh;
+    delete shader;
 
     glfwTerminate();
     return 0;
