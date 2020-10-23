@@ -30,6 +30,7 @@ endif()
 add_executable(
     "2d-game"
     "src/2d-game/main.cpp"
+    "src/2d-game/Display.cpp"
     "${GLAD_SOURCE_DIR}/glad.c"
 )
 add_executable(
