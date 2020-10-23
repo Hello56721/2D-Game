@@ -16,7 +16,16 @@ include_directories("${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "${GLM_INCLUDE_D
 
 link_directories("${GLFW_BINARY_DIR}")
 
-link_libraries("glfw3" "dl" "X11" "Xi" "pthread" "GL")
+if (UNIX AND NOT APPLE)
+    link_libraries("glfw3" "dl" "X11" "Xi" "pthread" "GL")
+endif()
+if (WIN32)
+    link_libraries("glfw3" "gdi32" "opengl32")
+endif()
+
+if (NOT MSVC)
+    add_compile_options("-Wall" "-g3")
+endif()
 
 add_executable(
     "2d-game"
