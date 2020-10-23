@@ -42,6 +42,7 @@ add_library(
     "src/EngineGraphics/Utils.cpp"
     "src/EngineGraphics/Shader.cpp"
     "src/EngineGraphics/Mesh.cpp"
+    "${GLAD_SOURCE_DIR}/glad.c"
 )
 add_library(
     "EngineUtils" SHARED
