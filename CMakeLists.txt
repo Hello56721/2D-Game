@@ -33,7 +33,7 @@ add_executable(
     "${GLAD_SOURCE_DIR}/glad.c"
 )
 add_executable(
-    "test.bim"
+    "test.bin"
     "test/fileutils.cpp"
 )
 add_library(
