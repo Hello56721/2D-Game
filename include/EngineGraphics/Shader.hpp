@@ -32,6 +32,7 @@ namespace EngineGraphics {
         void setUniform(std::string_view name, bool value) const;
         void setUniform(std::string_view name, int value) const;
         void setUniform(std::string_view name, float value) const;
+        void setUniform(std::string_view p_name, glm::mat4 value) const;
         
         // Destroys the shader program (obviously)
         virtual ~Shader();

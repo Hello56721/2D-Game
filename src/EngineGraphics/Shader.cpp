@@ -1,5 +1,9 @@
 #include <algorithm>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
 #include <EngineGraphics/Shader.hpp>
 
 using namespace EngineGraphics;
@@ -66,6 +70,12 @@ void Shader::setUniform(std::string_view p_name, float value) const {
     std::string name = p_name.data();
     int location = glCall(glGetUniformLocation(id, name.c_str()));
     glCall(glUniform1f(location, value));
+}
+
+void Shader::setUniform(std::string_view p_name, glm::mat4 value) const {
+    std::string name = p_name.data();
+    int location = glCall(glGetUniformLocation(id, name.c_str()));
+    glCall(glUniformMatrix4fv(location, 1, GL_FALSE, glm::value_ptr(value)));
 }
 
 Shader::~Shader() {
