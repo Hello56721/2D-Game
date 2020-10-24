@@ -33,7 +33,7 @@ add_executable(
     "${GLAD_SOURCE_DIR}/glad.c"
 )
 add_executable(
-    "test.e"
+    "test.bim"
     "test/fileutils.cpp"
 )
 add_library(
@@ -51,4 +51,4 @@ add_library(
 target_link_libraries("2d-game" "EngineGraphics" "EngineUtils")
 target_link_libraries("EngineGraphics" "EngineUtils")
 
-target_link_libraries("test.e" "EngineUtils")
+target_link_libraries("test.bin" "EngineUtils")
