@@ -5,12 +5,14 @@
 *.dll
 
 # build system files
-*.ninja*
+*.ninja
+*.ninja_deps
+*.ninja_log
 
 # execuatbles
 *.exe
 /2d-game
-/test.e
+/test.bin
 
 # cmake stuff
 /cmake_install.cmake
