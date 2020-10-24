@@ -10,6 +10,8 @@
 #include <EngineGraphics/Shader.hpp>
 #include <EngineGraphics/Mesh.hpp>
 
+void processInputs();
+
 int main(int argl, char* argv[]) {
     // Parse the command line options
     std::string args[argl];
@@ -26,9 +28,6 @@ int main(int argl, char* argv[]) {
     } else {
         Display::create(true);
     }
-    
-    
-    //Display::create(false);
     
     std::vector<Vertex> vertices = {
         {{ 0.5f,  0.5f, 0.0f}},
@@ -59,6 +58,8 @@ int main(int argl, char* argv[]) {
     
     glfwShowWindow(Display::window);
     while (Display::isOpen()) {
+        processInputs();
+        
         glCall(glClearColor(1.0f, 0.5f, 0.0f, 1.0f));
         glCall(glClear(GL_COLOR_BUFFER_BIT));
         
@@ -78,4 +79,10 @@ int main(int argl, char* argv[]) {
 
     glfwTerminate();
     return 0;
+}
+
+void processInputs() {
+    if (Display::isKeyDown(GLFW_KEY_ESCAPE)) {
+        glfwSetWindowShouldClose(Display::window, true);
+    }
 }
