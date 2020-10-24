@@ -16,10 +16,9 @@ include_directories("${GLFW_INCLUDE_DIR}" "${GLAD_INCLUDE_DIR}" "${GLM_INCLUDE_D
 
 link_directories("${GLFW_BINARY_DIR}")
 
-if (UNIX AND NOT APPLE)
+if (UNIX AND NOT APPLE AND NOT WIN32)
     link_libraries("glfw3" "dl" "X11" "Xi" "pthread" "GL")
-endif()
-if (WIN32)
+elseif (WIN32)
     link_libraries("glfw3" "gdi32" "opengl32")
 endif()
 
