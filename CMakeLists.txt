@@ -18,7 +18,7 @@ link_directories("${GLFW_BINARY_DIR}")
 
 if (UNIX AND NOT APPLE AND NOT WIN32)
     link_libraries("glfw3" "dl" "X11" "Xi" "pthread" "GL")
-elseif (WIN32)
+elseif (WIN32 OR MINGW)
     link_libraries("glfw3" "gdi32" "opengl32")
 endif()
 
@@ -33,7 +33,7 @@ add_executable(
     "${GLAD_SOURCE_DIR}/glad.c"
 )
 add_executable(
-    "test"
+    "test.e"
     "test/fileutils.cpp"
 )
 add_library(
@@ -51,4 +51,4 @@ add_library(
 target_link_libraries("2d-game" "EngineGraphics" "EngineUtils")
 target_link_libraries("EngineGraphics" "EngineUtils")
 
-target_link_libraries("test" "EngineUtils")
+target_link_libraries("test.e" "EngineUtils")

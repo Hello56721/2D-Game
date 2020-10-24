@@ -26,7 +26,7 @@ int main() {
     
     EngineGraphics::Mesh* mesh = new EngineGraphics::Mesh(vertices, indices);
     
-    EngineGraphics::Shader* shader = new EngineGraphics::Shader("../shaders/basic/vertex.glsl", "../shaders/basic/fragment.glsl", "shader program");
+    EngineGraphics::Shader* shader = new EngineGraphics::Shader("shaders/basic/vertex.glsl", "shaders/basic/fragment.glsl", "shader program");
     
     glm::mat4 coordinateSystems = glm::mat4(1.0f);
     

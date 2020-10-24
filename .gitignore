@@ -1,2 +1,18 @@
-/bin/
 /.vscode/
+
+# shared libraries
+*.so
+*.dll
+
+# build system files
+*.ninja*
+
+# execuatbles
+*.exe
+/2d-game
+/test.e
+
+# cmake stuff
+/cmake_install.cmake
+/CMakeCache.txt
+/CMakeFiles/
