@@ -10,8 +10,25 @@
 #include <EngineGraphics/Shader.hpp>
 #include <EngineGraphics/Mesh.hpp>
 
-int main() {
-    Display::create(false);
+int main(int argl, char* argv[]) {
+    // Parse the command line options
+    std::string args[argl];
+    for (int i = 0; i < argl; i++) {
+        args[i] = argv[i];
+    }
+    
+    if (argl != 1) {
+        if (args[1] == "--debug") {
+            Display::create(false);
+        } else {
+            Display::create(true);
+        }
+    } else {
+        Display::create(true);
+    }
+    
+    
+    //Display::create(false);
     
     std::vector<Vertex> vertices = {
         {{ 0.5f,  0.5f, 0.0f}},
