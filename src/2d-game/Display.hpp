@@ -25,6 +25,9 @@ namespace Display {
     
     // The framebuffer size callback
     void framebufferSizeCallback(GLFWwindow* window, int width, int height);
+    
+    // Returns if the specified key is pressed down
+    bool isKeyDown(int key);
 }
 
 #endif

@@ -64,3 +64,7 @@ void Display::framebufferSizeCallback(GLFWwindow* window, int width, int height)
     Display::height = height;
     glCall(glViewport(0, 0, width, height));
 }
+
+bool Display::isKeyDown(int key) {
+    return (glfwGetKey(window, key) == GLFW_PRESS);
+}
