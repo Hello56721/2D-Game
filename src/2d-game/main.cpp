@@ -12,6 +12,12 @@
 
 void processInputs();
 
+glm::mat4 model;
+glm::mat4 view;
+glm::mat4 projection;
+
+double deltaTime;
+
 int main(int argl, char* argv[]) {
     // Parse the command line options
     std::string args[argl];
@@ -30,10 +36,10 @@ int main(int argl, char* argv[]) {
     }
     
     std::vector<Vertex> vertices = {
-        {{ 0.5f,  0.5f, 0.0f}},
-        {{ 0.5f, -0.5f, 0.0f}},
-        {{-0.5f, -0.5f, 0.0f}},
-        {{-0.5f,  0.5f, 0.0f}}
+        {{ 0.1f,  0.1f, 0.0f}},
+        {{ 0.1f, -0.1f, 0.0f}},
+        {{-0.1f, -0.1f, 0.0f}},
+        {{-0.1f,  0.1f, 0.0f}}
     };
     std::vector<unsigned int> indices = {
         0, 1, 2,
@@ -46,19 +52,22 @@ int main(int argl, char* argv[]) {
     
     glm::mat4 coordinateSystems = glm::mat4(1.0f);
     
-    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::mat4(1.0f);
     
-    glm::mat4 view = glm::mat4(1.0f);
+    view = glm::mat4(1.0f);
     view = glm::translate(view, glm::vec3(0.0, 0.0, -3.0));
     
-    glm::mat4 projection;
     projection = glm::perspective(glm::radians(45.0f), static_cast<float>(Display::width) / static_cast<float>(Display::height), 0.1f, 100.0f);
     
-    coordinateSystems = projection * view * model;
+    double startTime, endTime;
     
     glfwShowWindow(Display::window);
     while (Display::isOpen()) {
+        startTime = glfwGetTime();
+        
         processInputs();
+        
+        coordinateSystems = projection * view * model;
         
         glCall(glClearColor(1.0f, 0.5f, 0.0f, 1.0f));
         glCall(glClear(GL_COLOR_BUFFER_BIT));
@@ -72,6 +81,9 @@ int main(int argl, char* argv[]) {
         //glfwSwapBuffers(window);
         //glfwPollEvents();
         Display::update();
+        
+        endTime = glfwGetTime();
+        deltaTime = endTime - startTime;
     }
     
     delete mesh;
@@ -84,5 +96,18 @@ int main(int argl, char* argv[]) {
 void processInputs() {
     if (Display::isKeyDown(GLFW_KEY_ESCAPE)) {
         glfwSetWindowShouldClose(Display::window, true);
+    }
+    
+    if (Display::isKeyDown(GLFW_KEY_UP)) {
+        model = glm::translate(model, glm::vec3(0.0, 0.5 * deltaTime, 0.0));
+    }
+    if (Display::isKeyDown(GLFW_KEY_DOWN)) {
+        model = glm::translate(model, glm::vec3(0.0, -0.5 * deltaTime, 0.0));
+    }
+    if (Display::isKeyDown(GLFW_KEY_RIGHT)) {
+        model = glm::translate(model, glm::vec3(0.5 * deltaTime, 0.0, 0.0));
+    }
+    if (Display::isKeyDown(GLFW_KEY_LEFT)) {
+        model = glm::translate(model, glm::vec3(-0.5 * deltaTime, 0.0, 0.0));
     }
 }
