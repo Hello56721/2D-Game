@@ -48,6 +48,9 @@ void Display::create(bool fullscreen) {
         glfwTerminate();
         return;
     }
+    
+    // Register the callbacks
+    glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
 }
 
 bool Display::isOpen() {
