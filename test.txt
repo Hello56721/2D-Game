@@ -1,5 +1,15 @@
-HJello!, this is a
-test, with some characters
-for you to read, including
-\n \r\n \t
-!@@##%#$^&*()%^&$%
+	linux-vdso.so.1 (0x00007ffc503d1000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f68fa22d000)
+	libX11.so.6 => /lib/x86_64-linux-gnu/libX11.so.6 (0x00007f68fa0f0000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f68fa0cd000)
+	libEngineGraphics.so => /home/yue/C++_Projects/2d-game/bin/libEngineGraphics.so (0x00007f68fa099000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f68f9eb8000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f68f9d69000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f68f9d4c000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f68f9b5a000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f68fa2de000)
+	libxcb.so.1 => /lib/x86_64-linux-gnu/libxcb.so.1 (0x00007f68f9b30000)
+	libEngineUtils.so => /home/yue/C++_Projects/2d-game/bin/libEngineUtils.so (0x00007f68f9b2a000)
+	libXau.so.6 => /lib/x86_64-linux-gnu/libXau.so.6 (0x00007f68f9b24000)
+	libXdmcp.so.6 => /lib/x86_64-linux-gnu/libXdmcp.so.6 (0x00007f68f9b1a000)
+	libbsd.so.0 => /lib/x86_64-linux-gnu/libbsd.so.0 (0x00007f68f9b00000)
