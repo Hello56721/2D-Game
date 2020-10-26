@@ -46,9 +46,12 @@ int main(int argl, char* argv[]) {
         0, 3, 2
     };
     
+    std::string vertexShaderPath = "../shaders/basic/vertex.glsl";
+    std::string fragmentShaderPath = "../shaders/basic/fragment.glsl";
+    
     EngineGraphics::Mesh* mesh = new EngineGraphics::Mesh(vertices, indices);
     
-    EngineGraphics::Shader* shader = new EngineGraphics::Shader("shaders/basic/vertex.glsl", "shaders/basic/fragment.glsl", "shader program");
+    EngineGraphics::Shader* shader = new EngineGraphics::Shader(vertexShaderPath, fragmentShaderPath, "shader program");
     
     glm::mat4 coordinateSystems = glm::mat4(1.0f);
     
