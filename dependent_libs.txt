@@ -1,3 +1,35 @@
+
+releases/0.1-linux/bin/2d-game.linuxexe:     file format elf64-x86-64
+releases/0.1-linux/bin/2d-game.linuxexe
+architecture: i386:x86-64, flags 0x00000150:
+HAS_SYMS, DYNAMIC, D_PAGED
+start address 0x0000000000014c80
+
+Program Header:
+    PHDR off    0x0000000000000040 vaddr 0x0000000000000040 paddr 0x0000000000000040 align 2**3
+         filesz 0x0000000000000268 memsz 0x0000000000000268 flags r--
+  INTERP off    0x00000000000002a8 vaddr 0x00000000000002a8 paddr 0x00000000000002a8 align 2**0
+         filesz 0x000000000000001c memsz 0x000000000000001c flags r--
+    LOAD off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**12
+         filesz 0x0000000000013e20 memsz 0x0000000000013e20 flags r--
+    LOAD off    0x0000000000014000 vaddr 0x0000000000014000 paddr 0x0000000000014000 align 2**12
+         filesz 0x0000000000027bd5 memsz 0x0000000000027bd5 flags r-x
+    LOAD off    0x000000000003c000 vaddr 0x000000000003c000 paddr 0x000000000003c000 align 2**12
+         filesz 0x000000000002a024 memsz 0x000000000002a024 flags r--
+    LOAD off    0x0000000000066650 vaddr 0x0000000000067650 paddr 0x0000000000067650 align 2**12
+         filesz 0x00000000000016c4 memsz 0x00000000000243e8 flags rw-
+ DYNAMIC off    0x0000000000066718 vaddr 0x0000000000067718 paddr 0x0000000000067718 align 2**3
+         filesz 0x0000000000000270 memsz 0x0000000000000270 flags rw-
+    NOTE off    0x00000000000002c4 vaddr 0x00000000000002c4 paddr 0x00000000000002c4 align 2**2
+         filesz 0x0000000000000044 memsz 0x0000000000000044 flags r--
+EH_FRAME off    0x0000000000060424 vaddr 0x0000000000060424 paddr 0x0000000000060424 align 2**2
+         filesz 0x00000000000011fc memsz 0x00000000000011fc flags r--
+   STACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**4
+         filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-
+   RELRO off    0x0000000000066650 vaddr 0x0000000000067650 paddr 0x0000000000067650 align 2**0
+         filesz 0x00000000000009b0 memsz 0x00000000000009b0 flags r--
+
+Dynamic Section:
   NEEDED               libdl.so.2
   NEEDED               libX11.so.6
   NEEDED               libpthread.so.0
@@ -6,3 +38,1767 @@
   NEEDED               libm.so.6
   NEEDED               libgcc_s.so.1
   NEEDED               libc.so.6
+  RUNPATH              /home/yue/OpenGL_Tools/GLFW/src:/home/yue/C++_Projects/2d-game/bin
+  INIT                 0x0000000000014000
+  FINI                 0x000000000003bbc8
+  INIT_ARRAY           0x0000000000067650
+  INIT_ARRAYSZ         0x0000000000000018
+  FINI_ARRAY           0x0000000000067668
+  FINI_ARRAYSZ         0x0000000000000008
+  GNU_HASH             0x0000000000000308
+  STRTAB               0x00000000000082a0
+  SYMTAB               0x0000000000001d00
+  STRSZ                0x0000000000007625
+  SYMENT               0x0000000000000018
+  DEBUG                0x0000000000000000
+  PLTGOT               0x0000000000067988
+  PLTRELSZ             0x0000000000001260
+  PLTREL               0x0000000000000007
+  JMPREL               0x0000000000012bc0
+  RELA                 0x00000000000102b0
+  RELASZ               0x0000000000002910
+  RELAENT              0x0000000000000018
+  FLAGS                0x0000000000000008
+  FLAGS_1              0x0000000008000001
+  VERNEED              0x0000000000010140
+  VERNEEDNUM           0x0000000000000006
+  VERSYM               0x000000000000f8c6
+  RELACOUNT            0x00000000000001ad
+
+Version References:
+  required from libgcc_s.so.1:
+    0x0b792650 0x00 18 GCC_3.0
+  required from libdl.so.2:
+    0x09691a75 0x00 09 GLIBC_2.2.5
+  required from libm.so.6:
+    0x06969187 0x00 16 GLIBC_2.27
+    0x09691a75 0x00 07 GLIBC_2.2.5
+  required from libstdc++.so.6:
+    0x0297f876 0x00 14 GLIBCXX_3.4.26
+    0x0bafd179 0x00 13 CXXABI_1.3.9
+    0x056bafd3 0x00 06 CXXABI_1.3
+    0x0297f871 0x00 05 GLIBCXX_3.4.21
+    0x08922974 0x00 04 GLIBCXX_3.4
+  required from libc.so.6:
+    0x0d696919 0x00 17 GLIBC_2.9
+    0x09691974 0x00 15 GLIBC_2.3.4
+    0x0d696917 0x00 12 GLIBC_2.7
+    0x06969197 0x00 11 GLIBC_2.17
+    0x06969194 0x00 10 GLIBC_2.14
+    0x0d696914 0x00 08 GLIBC_2.4
+    0x09691a75 0x00 03 GLIBC_2.2.5
+  required from libpthread.so.0:
+    0x09691a75 0x00 02 GLIBC_2.2.5
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .interp       0000001c  00000000000002a8  00000000000002a8  000002a8  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .note.gnu.build-id 00000024  00000000000002c4  00000000000002c4  000002c4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .note.ABI-tag 00000020  00000000000002e8  00000000000002e8  000002e8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .gnu.hash     000019f4  0000000000000308  0000000000000308  00000308  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .dynsym       000065a0  0000000000001d00  0000000000001d00  00001d00  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .dynstr       00007625  00000000000082a0  00000000000082a0  000082a0  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .gnu.version  00000878  000000000000f8c6  000000000000f8c6  0000f8c6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .gnu.version_r 00000170  0000000000010140  0000000000010140  00010140  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .rela.dyn     00002910  00000000000102b0  00000000000102b0  000102b0  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  9 .rela.plt     00001260  0000000000012bc0  0000000000012bc0  00012bc0  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 .init         0000001b  0000000000014000  0000000000014000  00014000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 11 .plt          00000c50  0000000000014020  0000000000014020  00014020  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .plt.got      00000008  0000000000014c70  0000000000014c70  00014c70  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .text         00026f45  0000000000014c80  0000000000014c80  00014c80  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .fini         0000000d  000000000003bbc8  000000000003bbc8  0003bbc8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .rodata       00024424  000000000003c000  000000000003c000  0003c000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 16 .eh_frame_hdr 000011fc  0000000000060424  0000000000060424  00060424  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 17 .eh_frame     00004900  0000000000061620  0000000000061620  00061620  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 18 .gcc_except_table 00000104  0000000000065f20  0000000000065f20  00065f20  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 19 .init_array   00000018  0000000000067650  0000000000067650  00066650  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 20 .fini_array   00000008  0000000000067668  0000000000067668  00066668  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 21 .data.rel.ro  000000a8  0000000000067670  0000000000067670  00066670  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+ 22 .dynamic      00000270  0000000000067718  0000000000067718  00066718  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 23 .got          00000670  0000000000067988  0000000000067988  00066988  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 24 .data         00000d14  0000000000068000  0000000000068000  00067000  2**4
+                  CONTENTS, ALLOC, LOAD, DATA
+ 25 .bss          00022cf8  0000000000068d40  0000000000068d40  00067d14  2**6
+                  ALLOC
+ 26 .comment      00000049  0000000000000000  0000000000000000  00067d14  2**0
+                  CONTENTS, READONLY
+ 27 .debug_aranges 00000b90  0000000000000000  0000000000000000  00067d5d  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 28 .debug_info   0003b399  0000000000000000  0000000000000000  000688ed  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 29 .debug_abbrev 00001983  0000000000000000  0000000000000000  000a3c86  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 30 .debug_line   00007255  0000000000000000  0000000000000000  000a5609  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 31 .debug_str    00049c88  0000000000000000  0000000000000000  000ac85e  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 32 .debug_ranges 00000b40  0000000000000000  0000000000000000  000f64e6  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 33 .debug_macro  0000c6a5  0000000000000000  0000000000000000  000f7026  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000000002a8 l    d  .interp	0000000000000000              .interp
+00000000000002c4 l    d  .note.gnu.build-id	0000000000000000              .note.gnu.build-id
+00000000000002e8 l    d  .note.ABI-tag	0000000000000000              .note.ABI-tag
+0000000000000308 l    d  .gnu.hash	0000000000000000              .gnu.hash
+0000000000001d00 l    d  .dynsym	0000000000000000              .dynsym
+00000000000082a0 l    d  .dynstr	0000000000000000              .dynstr
+000000000000f8c6 l    d  .gnu.version	0000000000000000              .gnu.version
+0000000000010140 l    d  .gnu.version_r	0000000000000000              .gnu.version_r
+00000000000102b0 l    d  .rela.dyn	0000000000000000              .rela.dyn
+0000000000012bc0 l    d  .rela.plt	0000000000000000              .rela.plt
+0000000000014000 l    d  .init	0000000000000000              .init
+0000000000014020 l    d  .plt	0000000000000000              .plt
+0000000000014c70 l    d  .plt.got	0000000000000000              .plt.got
+0000000000014c80 l    d  .text	0000000000000000              .text
+000000000003bbc8 l    d  .fini	0000000000000000              .fini
+000000000003c000 l    d  .rodata	0000000000000000              .rodata
+0000000000060424 l    d  .eh_frame_hdr	0000000000000000              .eh_frame_hdr
+0000000000061620 l    d  .eh_frame	0000000000000000              .eh_frame
+0000000000065f20 l    d  .gcc_except_table	0000000000000000              .gcc_except_table
+0000000000067650 l    d  .init_array	0000000000000000              .init_array
+0000000000067668 l    d  .fini_array	0000000000000000              .fini_array
+0000000000067670 l    d  .data.rel.ro	0000000000000000              .data.rel.ro
+0000000000067718 l    d  .dynamic	0000000000000000              .dynamic
+0000000000067988 l    d  .got	0000000000000000              .got
+0000000000068000 l    d  .data	0000000000000000              .data
+0000000000068d40 l    d  .bss	0000000000000000              .bss
+0000000000000000 l    d  .comment	0000000000000000              .comment
+0000000000000000 l    d  .debug_aranges	0000000000000000              .debug_aranges
+0000000000000000 l    d  .debug_info	0000000000000000              .debug_info
+0000000000000000 l    d  .debug_abbrev	0000000000000000              .debug_abbrev
+0000000000000000 l    d  .debug_line	0000000000000000              .debug_line
+0000000000000000 l    d  .debug_str	0000000000000000              .debug_str
+0000000000000000 l    d  .debug_ranges	0000000000000000              .debug_ranges
+0000000000000000 l    d  .debug_macro	0000000000000000              .debug_macro
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000014cb0 l     F .text	0000000000000000              deregister_tm_clones
+0000000000014ce0 l     F .text	0000000000000000              register_tm_clones
+0000000000014d20 l     F .text	0000000000000000              __do_global_dtors_aux
+0000000000068e50 l     O .bss	0000000000000001              completed.8060
+0000000000067668 l     O .fini_array	0000000000000000              __do_global_dtors_aux_fini_array_entry
+0000000000014d60 l     F .text	0000000000000000              frame_dummy
+0000000000067650 l     O .init_array	0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*	0000000000000000              main.cpp
+0000000000068f28 l     O .bss	0000000000000001              _ZStL8__ioinit
+0000000000015d89 l     F .text	000000000000004d              _Z41__static_initialization_and_destruction_0ii
+0000000000015dd6 l     F .text	0000000000000019              _GLOBAL__sub_I_model
+0000000000000000 l    df *ABS*	0000000000000000              Display.cpp
+0000000000068f40 l     O .bss	0000000000000001              _ZStL8__ioinit
+0000000000019852 l     F .text	000000000000004d              _Z41__static_initialization_and_destruction_0ii
+000000000001989f l     F .text	0000000000000019              _GLOBAL__sub_I__ZN7Display6windowE
+0000000000000000 l    df *ABS*	0000000000000000              glad.c
+000000000006a578 l     O .bss	0000000000000008              libGL
+000000000006a580 l     O .bss	0000000000000008              gladGetProcAddressPtr
+00000000000198b8 l     F .text	0000000000000092              open_gl
+0000000000068020 l     O .data	0000000000000010              NAMES.7025
+000000000001994a l     F .text	0000000000000031              close_gl
+000000000001997b l     F .text	0000000000000072              get_proc
+000000000006a588 l     O .bss	0000000000000004              max_loaded_major
+000000000006a58c l     O .bss	0000000000000004              max_loaded_minor
+000000000006a590 l     O .bss	0000000000000008              exts
+000000000006a598 l     O .bss	0000000000000004              num_exts_i
+000000000006a5a0 l     O .bss	0000000000000008              exts_i
+0000000000019a22 l     F .text	0000000000000123              get_exts
+0000000000019b45 l     F .text	000000000000006c              free_exts
+0000000000019bb1 l     F .text	000000000000014e              has_ext
+0000000000019cff l     F .text	00000000000003e3              load_GL_VERSION_1_0
+000000000001a0e2 l     F .text	0000000000000127              load_GL_VERSION_1_1
+000000000001a209 l     F .text	000000000000006f              load_GL_VERSION_1_2
+000000000001a278 l     F .text	00000000000000d7              load_GL_VERSION_1_3
+000000000001a34f l     F .text	00000000000000d7              load_GL_VERSION_1_4
+000000000001a426 l     F .text	000000000000019f              load_GL_VERSION_1_5
+000000000001a5c5 l     F .text	0000000000000767              load_GL_VERSION_2_0
+000000000001ad2c l     F .text	0000000000000097              load_GL_VERSION_2_1
+000000000001adc3 l     F .text	00000000000006b3              load_GL_VERSION_3_0
+000000000001b476 l     F .text	000000000000014f              load_GL_VERSION_3_1
+000000000001b5c5 l     F .text	000000000000019f              load_GL_VERSION_3_2
+000000000001b764 l     F .text	00000000000004ab              load_GL_VERSION_3_3
+000000000001bc0f l     F .text	00000000000003bb              load_GL_VERSION_4_0
+000000000001bfca l     F .text	0000000000000717              load_GL_VERSION_4_1
+000000000001c6e1 l     F .text	0000000000000113              load_GL_VERSION_4_2
+000000000001c7f4 l     F .text	0000000000000393              load_GL_VERSION_4_3
+000000000001cb87 l     F .text	00000000000000d7              load_GL_VERSION_4_4
+000000000001cc5e l     F .text	00000000000009ab              load_GL_VERSION_4_5
+000000000001d609 l     F .text	000000000000006f              load_GL_VERSION_4_6
+000000000001d678 l     F .text	0000000000000024              find_extensionsGL
+000000000001d69c l     F .text	0000000000000466              find_coreGL
+0000000000000000 l    df *ABS*	0000000000000000              context.c
+0000000000000000 l    df *ABS*	0000000000000000              init.c
+000000000008ba30 l     O .bss	0000000000000008              _glfwErrorCallback
+0000000000068d08 l     O .data	000000000000000c              _glfwInitHints
+000000000008b620 l     O .bss	0000000000000410              _glfwMainThreadError
+000000000001f9f0 l     F .text	0000000000000210              terminate
+0000000000000000 l    df *ABS*	0000000000000000              input.c
+0000000000023160 l     F .text	00000000000000aa              findMapping
+0000000000020590 l     F .text	0000000000000142              findValidMapping
+0000000000023ce0 l     F .text	00000000000000b8              isValidElementForJoystick
+0000000000022910 l     F .text	0000000000000843              parseMapping
+0000000000000000 l    df *ABS*	0000000000000000              monitor.c
+0000000000024510 l     F .text	00000000000000de              compareVideoModes
+0000000000024430 l     F .text	00000000000000a3              refreshVideoModes
+0000000000000000 l    df *ABS*	0000000000000000              vulkan.c
+0000000000000000 l    df *ABS*	0000000000000000              window.c
+0000000000000000 l    df *ABS*	0000000000000000              x11_init.c
+000000000002aa60 l     F .text	000000000000009d              createHelperWindow
+000000000002ab00 l     F .text	0000000000000076              createHiddenCursor
+000000000002af50 l     F .text	00000000000009c9              createKeyTables
+000000000002b920 l     F .text	0000000000000312              detectEWMH
+0000000000029360 l     F .text	0000000000000027              errorHandler
+000000000002cc30 l     F .text	0000000000000092              getSupportedAtom
+0000000000029800 l     F .text	000000000000010a              getSystemContentScale
+000000000002ab80 l     F .text	00000000000000bf              hasUsableInputMethodStyle
+0000000000029910 l     F .text	0000000000001149              initExtensions
+000000000002bc40 l     F .text	0000000000000ff0              translateKeyCode
+0000000000000000 l    df *ABS*	0000000000000000              x11_monitor.c
+000000000002e630 l     F .text	0000000000000090              calculateRefreshRate
+000000000002d6d0 l     F .text	0000000000000086              getModeInfo
+000000000002d760 l     F .text	0000000000000025              modeIsGood
+000000000002d790 l     F .text	00000000000000e2              vidmodeFromModeInfo
+0000000000000000 l    df *ABS*	0000000000000000              x11_window.c
+000000000002fd80 l     F .text	000000000000018e              acquireMonitor
+00000000000359e0 l     F .text	00000000000000c8              convertLatin1toUTF8
+000000000002f120 l     F .text	00000000000008d7              createNativeWindow
+00000000000356b0 l     F .text	00000000000000b0              decodeUTF8
+000000000005ded0 l     O .rodata	0000000000000018              decodeUTF8.offsets
+0000000000033cd0 l     F .text	00000000000000f4              disableCursor
+0000000000032060 l     F .text	0000000000000081              disableRawMouseMotion
+0000000000033dd0 l     F .text	000000000000007a              enableCursor
+0000000000031fd0 l     F .text	000000000000008c              enableRawMouseMotion
+0000000000034090 l     F .text	00000000000001ea              encodeUTF8
+0000000000034580 l     F .text	00000000000004a0              getSelectionString
+0000000000031770 l     F .text	000000000000007a              getWindowState
+000000000002ea60 l     F .text	000000000000007d              handleSelectionClear
+000000000002e990 l     F .text	00000000000000c1              handleSelectionRequest
+0000000000030e20 l     F .text	0000000000000081              isFrameExtentsEvent
+0000000000035960 l     F .text	0000000000000078              isSelPropNewValueNotify
+000000000002e910 l     F .text	0000000000000079              isSelectionEvent
+0000000000035760 l     F .text	00000000000001f6              parseUriList
+0000000000032240 l     F .text	000000000000172b              processEvent
+00000000000300a0 l     F .text	000000000000009a              releaseMonitor
+0000000000030d10 l     F .text	0000000000000104              sendEventToWM
+00000000000355b0 l     F .text	0000000000000045              translateKey
+0000000000035600 l     F .text	00000000000000a3              translateState
+0000000000033e50 l     F .text	00000000000000a9              updateCursorImage
+0000000000030870 l     F .text	00000000000001ae              updateNormalHints
+000000000002fa60 l     F .text	0000000000000315              updateWindowMode
+000000000002eae0 l     F .text	0000000000000354              waitForEvent
+00000000000310f0 l     F .text	000000000000009c              waitForVisibilityNotify
+00000000000350f0 l     F .text	00000000000004b8              writeTargetToProperty
+0000000000000000 l    df *ABS*	0000000000000000              xkb_unicode.c
+000000000005e2e0 l     O .rodata	0000000000000cf0              keysymtab
+0000000000000000 l    df *ABS*	0000000000000000              posix_time.c
+0000000000000000 l    df *ABS*	0000000000000000              posix_thread.c
+0000000000000000 l    df *ABS*	0000000000000000              glx_context.c
+00000000000373b0 l     F .text	00000000000003cc              chooseGLXFBConfig
+0000000000037780 l     F .text	000000000000004f              createLegacyContextGLX
+00000000000379d0 l     F .text	0000000000000098              destroyContextGLX
+00000000000367e0 l     F .text	000000000000006f              extensionSupportedGLX
+0000000000037c70 l     F .text	000000000000004a              getGLXFBConfigAttrib
+0000000000036850 l     F .text	0000000000000095              getProcAddressGLX
+00000000000377d0 l     F .text	00000000000000db              makeContextCurrentGLX
+00000000000378b0 l     F .text	0000000000000034              swapBuffersGLX
+00000000000378f0 l     F .text	00000000000000d4              swapIntervalGLX
+0000000000000000 l    df *ABS*	0000000000000000              egl_context.c
+0000000000039230 l     F .text	00000000000003b9              chooseEGLConfig
+0000000000039850 l     F .text	00000000000000e2              destroyContextEGL
+0000000000038490 l     F .text	000000000000006e              extensionSupportedEGL
+0000000000039c20 l     F .text	000000000000004a              getEGLConfigAttrib
+0000000000038350 l     F .text	0000000000000133              getEGLErrorString
+00000000000397c0 l     F .text	000000000000008e              getProcAddressEGL
+00000000000395f0 l     F .text	0000000000000120              makeContextCurrentEGL
+0000000000039710 l     F .text	0000000000000076              swapBuffersEGL
+0000000000039790 l     F .text	000000000000002b              swapIntervalEGL
+0000000000000000 l    df *ABS*	0000000000000000              osmesa_context.c
+000000000003a6f0 l     F .text	000000000000008c              destroyContextOSMesa
+000000000003a6b0 l     F .text	000000000000000c              extensionSupportedOSMesa
+000000000003a6c0 l     F .text	0000000000000026              getProcAddressOSMesa
+000000000003a560 l     F .text	0000000000000128              makeContextCurrentOSMesa
+000000000003a690 l     F .text	000000000000000a              swapBuffersOSMesa
+000000000003a6a0 l     F .text	0000000000000009              swapIntervalOSMesa
+0000000000000000 l    df *ABS*	0000000000000000              linux_joystick.c
+000000000003b510 l     F .text	0000000000000038              closeJoystick
+000000000003b3d0 l     F .text	0000000000000053              compareJoysticks
+000000000003b990 l     F .text	00000000000001a6              handleAbsEvent
+000000000006041b l     O .rodata	0000000000000009              handleAbsEvent.stateMap
+000000000003b940 l     F .text	000000000000004c              handleKeyEvent
+000000000003ac60 l     F .text	000000000000076c              openJoystickDevice
+000000000003b880 l     F .text	00000000000000bc              pollAbsState
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000065f1c l     O .eh_frame	0000000000000000              __FRAME_END__
+0000000000000000 l    df *ABS*	0000000000000000              
+0000000000060424 l       .eh_frame_hdr	0000000000000000              __GNU_EH_FRAME_HDR
+0000000000014000 l     F .init	0000000000000000              _init
+0000000000067718 l     O .dynamic	0000000000000000              _DYNAMIC
+0000000000067668 l       .init_array	0000000000000000              __init_array_end
+0000000000067650 l       .init_array	0000000000000000              __init_array_start
+0000000000067988 l     O .got	0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000068030 g     O .data	0000000000000cd8              _glfwDefaultMappings
+0000000000069b80 g     O .bss	0000000000000008              glad_glNamedFramebufferReadBuffer
+0000000000017c39  w    F .text	000000000000000f              _ZN3glm3vecILi3EfLNS_9qualifierE0EE6lengthEv
+000000000006a4e8 g     O .bss	0000000000000008              glad_glVertexAttribP2uiv
+0000000000069000 g     O .bss	0000000000000008              glad_glBindBuffersRange
+0000000000069148 g     O .bss	0000000000000008              glad_glClearColor
+0000000000069e98 g     O .bss	0000000000000008              glad_glSecondaryColorP3ui
+00000000000267a0 g     F .text	000000000000014e              glfwDefaultWindowHints
+000000000001739a  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorI6VertexEC1Ev
+0000000000015f90  w    F .text	0000000000000054              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC1IiiifEET_T0_T1_T2_
+0000000000069e30 g     O .bss	0000000000000008              glad_glResumeTransformFeedback
+000000000006a0b8 g     O .bss	0000000000000008              glad_glUniform1ui
+0000000000000000       F *UND*	0000000000000000              __errno_location@@GLIBC_2.2.5
+0000000000020020 g     F .text	000000000000004c              _glfwInputScroll
+0000000000069d08 g     O .bss	0000000000000008              glad_glProgramUniform3ui
+0000000000000000       F *UND*	0000000000000000              XConvertSelection
+000000000006a040 g     O .bss	0000000000000008              glad_glTextureStorage3D
+0000000000034470 g     F .text	0000000000000043              _glfwPlatformSetCursor
+000000000001916e  w    F .text	000000000000006e              _ZSt14__copy_move_a2ILb0EN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEEPjET1_T0_SA_S9_
+0000000000000000       F *UND*	0000000000000000              XUnsetICFocus
+0000000000069ce8 g     O .bss	0000000000000008              glad_glProgramUniform3f
+0000000000036010 g     F .text	00000000000007c9              _glfwInitGLX
+000000000006a450 g     O .bss	0000000000000008              glad_glVertexAttribI4ubv
+000000000006a410 g     O .bss	0000000000000008              glad_glVertexAttribI3i
+0000000000030ad0 g     F .text	000000000000002b              _glfwPlatformGetFramebufferSize
+000000000001825a  w    F .text	0000000000000037              _ZNSt12_Vector_baseI6VertexSaIS0_EE11_M_allocateEm
+0000000000069468 g     O .bss	0000000000000008              glad_glDrawTransformFeedbackStreamInstanced
+000000000002db50 g     F .text	00000000000003cd              _glfwPlatformGetMonitorWorkarea
+000000000001935a  w    F .text	0000000000000021              _ZSt12__niter_baseIPKjSt6vectorIjSaIjEEET_N9__gnu_cxx17__normal_iteratorIS5_T0_EE
+00000000000697b0 g     O .bss	0000000000000008              glad_glGetSamplerParameterIiv
+0000000000018384  w    F .text	000000000000001e              _ZSt10__distanceIPKjENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag
+0000000000000000       F *UND*	0000000000000000              strcspn@@GLIBC_2.2.5
+0000000000025ed0 g     F .text	00000000000000fc              _glfwInputWindowFocus
+0000000000069a08 g     O .bss	0000000000000008              glad_glInvalidateTexImage
+0000000000000000       F *UND*	0000000000000000              XSetScreenSaver
+0000000000069090 g     O .bss	0000000000000008              glad_glBlendEquation
+00000000000172d4  w    F .text	000000000000004b              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC1Ef
+0000000000069f78 g     O .bss	0000000000000008              glad_glTexParameterIuiv
+0000000000017a12  w    F .text	0000000000000027              _ZNKSt6vectorIjSaIjEE4sizeEv
+0000000000030b00 g     F .text	000000000000020a              _glfwPlatformGetWindowFrameSize
+0000000000024860 g     F .text	00000000000000eb              glfwGetMonitorWorkarea
+0000000000069fc0 g     O .bss	0000000000000008              glad_glTexStorage3DMultisample
+000000000002d9f0 g     F .text	00000000000000f1              _glfwPlatformGetMonitorPos
+00000000000699f8 g     O .bss	0000000000000008              glad_glInvalidateNamedFramebufferSubData
+0000000000069210 g     O .bss	0000000000000008              glad_glCompressedTexSubImage2D
+00000000000175f6  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorIjEC2Ev
+000000000006a550 g     O .bss	0000000000000008              glad_glViewport
+00000000000699c8 g     O .bss	0000000000000008              glad_glGetnUniformuiv
+000000000006a408 g     O .bss	0000000000000008              glad_glVertexAttribI2uiv
+000000000002e5d0 g     F .text	000000000000005a              glfwGetX11Monitor
+0000000000069230 g     O .bss	0000000000000008              glad_glCompressedTextureSubImage3D
+0000000000069720 g     O .bss	0000000000000008              glad_glGetProgramResourceIndex
+0000000000069788 g     O .bss	0000000000000008              glad_glGetQueryObjectiv
+0000000000069550 g     O .bss	0000000000000008              glad_glGenTransformFeedbacks
+00000000000691b8 g     O .bss	0000000000000008              glad_glColorMask
+0000000000069360 g     O .bss	0000000000000008              glad_glDeleteTransformFeedbacks
+00000000000219d0 g     F .text	00000000000000ac              glfwSetScrollCallback
+0000000000069520 g     O .bss	0000000000000008              glad_glGenFramebuffers
+0000000000069670 g     O .bss	0000000000000008              glad_glGetInteger64i_v
+0000000000024cf0 g     F .text	00000000000000ef              glfwGetVideoModes
+00000000000163a6  w    F .text	00000000000000b3              _ZNSt6vectorIjSaIjEEC1ESt16initializer_listIjERKS0_
+0000000000000000       F *UND*	0000000000000000              _ZNSaIcED2Ev@@GLIBCXX_3.4
+00000000000310c0 g     F .text	0000000000000027              _glfwPlatformWindowIconified
+0000000000069548 g     O .bss	0000000000000008              glad_glGenTextures
+0000000000018d78  w    F .text	000000000000001a              _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag
+0000000000000000       F *UND*	0000000000000000              sprintf@@GLIBC_2.2.5
+0000000000015e55  w    F .text	000000000000001f              _ZSt3tanf
+000000000006a2c0 g     O .bss	0000000000000008              glad_glVertexAttrib1sv
+0000000000020d80 g     F .text	00000000000000fc              glfwGetKey
+0000000000023a50 g     F .text	00000000000000bd              glfwGetTime
+0000000000039f30 g     F .text	0000000000000626              _glfwCreateContextOSMesa
+0000000000000000       F *UND*	0000000000000000              XrmUniqueQuark
+00000000000695d0 g     O .bss	0000000000000008              glad_glGetBooleani_v
+0000000000000000       F *UND*	0000000000000000              XAllocSizeHints
+000000000006a4c0 g     O .bss	0000000000000008              glad_glVertexAttribLFormat
+000000000003a8c0 g     F .text	0000000000000134              glfwGetOSMesaDepthBuffer
+000000000002ff10 g     F .text	0000000000000181              _glfwPlatformDestroyWindow
+000000000006a210 g     O .bss	0000000000000008              glad_glUniformMatrix4x3dv
+00000000000697d0 g     O .bss	0000000000000008              glad_glGetShaderInfoLog
+000000000001624a  w    F .text	000000000000001f              _ZNSaI6VertexED2Ev
+000000000006a490 g     O .bss	0000000000000008              glad_glVertexAttribL2d
+0000000000069e78 g     O .bss	0000000000000008              glad_glScissor
+0000000000034300 g     F .text	000000000000012d              _glfwPlatformCreateStandardCursor
+0000000000025c30 g     F .text	000000000000010c              glfwGetPhysicalDevicePresentationSupport
+0000000000069a10 g     O .bss	0000000000000008              glad_glInvalidateTexSubImage
+0000000000069fd8 g     O .bss	0000000000000008              glad_glTexSubImage3D
+0000000000035cd0 g     F .text	0000000000000096              _glfwPlatformCreateTls
+0000000000000000       F *UND*	0000000000000000              XFreeColormap
+0000000000000000       F *UND*	0000000000000000              strstr@@GLIBC_2.2.5
+0000000000069378 g     O .bss	0000000000000008              glad_glDepthMask
+00000000000692b0 g     O .bss	0000000000000008              glad_glCreateQueries
+0000000000034560 g     F .text	0000000000000019              _glfwPlatformGetClipboardString
+000000000006a070 g     O .bss	0000000000000008              glad_glTransformFeedbackBufferBase
+0000000000069970 g     O .bss	0000000000000008              glad_glGetnMapiv
+0000000000027f90 g     F .text	000000000000008b              glfwMaximizeWindow
+0000000000018c16  w    F .text	0000000000000013              _ZNSt12_Destroy_auxILb1EE9__destroyIPjEEvT_S3_
+0000000000019774 g     F .text	00000000000000b3              _ZN7Display23framebufferSizeCallbackEP10GLFWwindowii
+0000000000000000       F *UND*	0000000000000000              XResourceManagerString
+0000000000069180 g     O .bss	0000000000000008              glad_glClearNamedFramebufferiv
+0000000000069a88 g     O .bss	0000000000000008              glad_glLineWidth
+00000000000690e0 g     O .bss	0000000000000008              glad_glBufferData
+00000000000695b8 g     O .bss	0000000000000008              glad_glGetActiveUniformsiv
+0000000000068d14 g       .data	0000000000000000              _edata
+0000000000021870 g     F .text	00000000000000ac              glfwSetCursorPosCallback
+000000000001fdf0 g     F .text	000000000000002c              glfwSetErrorCallback
+00000000000185a6  w    F .text	000000000000002d              _ZNSt16allocator_traitsISaIjEE37select_on_container_copy_constructionERKS0_
+0000000000017984  w    F .text	0000000000000058              _ZNKSt6vectorI6VertexSaIS0_EE3endEv
+0000000000069a20 g     O .bss	0000000000000008              glad_glIsEnabled
+000000000001665e  w    F .text	000000000000011f              _ZNSt6vectorIjSaIjEEC2ERKS1_
+0000000000018b4a  w    F .text	0000000000000069              _ZNSt6vectorIjSaIjEE11_S_max_sizeERKS0_
+0000000000069898 g     O .bss	0000000000000008              glad_glGetTransformFeedbacki64_v
+0000000000069990 g     O .bss	0000000000000008              glad_glGetnPixelMapusv
+000000000006a168 g     O .bss	0000000000000008              glad_glUniform4i
+0000000000000000       F *UND*	0000000000000000              XSendEvent
+0000000000069198 g     O .bss	0000000000000008              glad_glClearTexImage
+0000000000069ef8 g     O .bss	0000000000000008              glad_glTexBuffer
+000000000006a2c8 g     O .bss	0000000000000008              glad_glVertexAttrib2d
+0000000000069a78 g     O .bss	0000000000000008              glad_glIsTransformFeedback
+000000000006a130 g     O .bss	0000000000000008              glad_glUniform3iv
+00000000000690c8 g     O .bss	0000000000000008              glad_glBlendFunci
+000000000001747c  w    F .text	0000000000000046              _ZNKSt16initializer_listI6VertexE3endEv
+0000000000017320  w    F .text	0000000000000079              _ZN3glm3vecILi4EfLNS_9qualifierE0EEmLIfEERS2_T_
+0000000000069b08 g     O .bss	0000000000000008              glad_glMultiDrawElementsIndirectCount
+0000000000000000       F *UND*	0000000000000000              _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc@@GLIBCXX_3.4.21
+0000000000000000       F *UND*	0000000000000000              XGetWindowProperty
+0000000000024050 g     F .text	0000000000000077              _glfwFreeMonitor
+0000000000068ff0 g     O .bss	0000000000000008              glad_glBindBufferRange
+0000000000031a80 g     F .text	00000000000000ad              _glfwPlatformSetWindowDecorated
+0000000000016145  w    F .text	0000000000000083              _ZN3glmmlIfLNS_9qualifierE0EEENS_3vecILi4ET_XT0_EEERKS4_RKS3_
+000000000002d500 g     F .text	00000000000001c5              _glfwPlatformGetVideoMode
+00000000000694d0 g     O .bss	0000000000000008              glad_glFlushMappedNamedBufferRange
+000000000006a020 g     O .bss	0000000000000008              glad_glTextureParameteriv
+00000000000693d8 g     O .bss	0000000000000008              glad_glDrawArrays
+0000000000069170 g     O .bss	0000000000000008              glad_glClearNamedFramebufferfi
+000000000006a0c0 g     O .bss	0000000000000008              glad_glUniform1uiv
+0000000000069c48 g     O .bss	0000000000000008              glad_glProgramBinary
+0000000000069560 g     O .bss	0000000000000008              glad_glGenerateMipmap
+000000000006a170 g     O .bss	0000000000000008              glad_glUniform4iv
+0000000000069960 g     O .bss	0000000000000008              glad_glGetnMapdv
+0000000000000000       F *UND*	0000000000000000              XGetIMValues
+0000000000020cf0 g     F .text	0000000000000084              glfwGetKeyScancode
+0000000000024bf0 g     F .text	0000000000000086              glfwGetMonitorUserPointer
+0000000000069138 g     O .bss	0000000000000008              glad_glClearBufferiv
+000000000006a568 g     O .bss	0000000000000008              glad_glViewportIndexedfv
+0000000000069428 g     O .bss	0000000000000008              glad_glDrawElementsInstancedBaseInstance
+00000000000696d0 g     O .bss	0000000000000008              glad_glGetNamedFramebufferParameteriv
+0000000000069fa8 g     O .bss	0000000000000008              glad_glTexStorage2D
+0000000000000000       F *UND*	0000000000000000              XGetScreenSaver
+0000000000069178 g     O .bss	0000000000000008              glad_glClearNamedFramebufferfv
+0000000000000000       F *UND*	0000000000000000              XSetErrorHandler
+000000000006a110 g     O .bss	0000000000000008              glad_glUniform3dv
+000000000006a3a0 g     O .bss	0000000000000008              glad_glVertexAttrib4ubv
+0000000000069278 g     O .bss	0000000000000008              glad_glCopyTextureSubImage1D
+000000000006a218 g     O .bss	0000000000000008              glad_glUniformMatrix4x3fv
+0000000000020130 g     F .text	00000000000000ad              _glfwInputCursorPos
+0000000000034280 g     F .text	000000000000001c              _glfwPlatformGetKeyScancode
+0000000000069760 g     O .bss	0000000000000008              glad_glGetQueryBufferObjectiv
+00000000000694e8 g     O .bss	0000000000000008              glad_glFramebufferTexture
+0000000000069008 g     O .bss	0000000000000008              glad_glBindFragDataLocation
+00000000000266a0 g     F .text	00000000000000f6              glfwDestroyWindow
+0000000000000000       F *UND*	0000000000000000              strtoul@@GLIBC_2.2.5
+0000000000034430 g     F .text	000000000000003c              _glfwPlatformDestroyCursor
+0000000000068fa0 g     O .bss	0000000000000008              glad_glActiveShaderProgram
+0000000000069460 g     O .bss	0000000000000008              glad_glDrawTransformFeedbackStream
+000000000006a0d0 g     O .bss	0000000000000008              glad_glUniform2dv
+0000000000068000  w      .data	0000000000000000              data_start
+0000000000000000       F *UND*	0000000000000000              Xutf8SetWMProperties
+0000000000000000       F *UND*	0000000000000000              XQueryExtension
+00000000000692c8 g     O .bss	0000000000000008              glad_glCreateShader
+0000000000023c90 g     F .text	0000000000000048              glfwGetTimerFrequency
+0000000000035c40 g     F .text	0000000000000066              _glfwPlatformGetTimerValue
+0000000000069f68 g     O .bss	0000000000000008              glad_glTexImage3DMultisample
+000000000006a4a8 g     O .bss	0000000000000008              glad_glVertexAttribL3dv
+000000000001fc20 g     F .text	0000000000000093              glfwInitHint
+0000000000069100 g     O .bss	0000000000000008              glad_glCheckNamedFramebufferStatus
+0000000000016366  w    F .text	000000000000001f              _ZNSaIjEC1Ev
+0000000000000000       F *UND*	0000000000000000              strerror@@GLIBC_2.2.5
+0000000000069070 g     O .bss	0000000000000008              glad_glBindVertexArray
+0000000000035db0 g     F .text	000000000000004f              _glfwPlatformGetTls
+000000000006a050 g     O .bss	0000000000000008              glad_glTextureSubImage1D
+00000000000215b0 g     F .text	00000000000000ac              glfwSetKeyCallback
+000000000003c000 g     O .rodata	0000000000000004              _IO_stdin_used
+0000000000000000       F *UND*	0000000000000000              XrmInitialize
+000000000006a010 g     O .bss	0000000000000008              glad_glTextureParameterfv
+00000000000693e8 g     O .bss	0000000000000008              glad_glDrawArraysInstanced
+00000000000693e0 g     O .bss	0000000000000008              glad_glDrawArraysIndirect
+0000000000000000       F *UND*	0000000000000000              XUndefineCursor
+00000000000182c6  w    F .text	000000000000002a              _ZSt8_DestroyIP6VertexEvT_S2_
+0000000000069310 g     O .bss	0000000000000008              glad_glDeleteBuffers
+000000000001f1a0 g     F .text	00000000000000cb              glfwGetProcAddress
+0000000000000000       F *UND*	0000000000000000              XFreeEventData
+0000000000000000       F *UND*	0000000000000000              XGrabPointer
+000000000006a548 g     O .bss	0000000000000008              glad_glVertexP4uiv
+00000000000319e0 g     F .text	000000000000005c              _glfwPlatformFramebufferTransparent
+00000000000699b0 g     O .bss	0000000000000008              glad_glGetnUniformdv
+0000000000000000       F *UND*	0000000000000000              _ZSt17__throw_bad_allocv@@GLIBCXX_3.4
+000000000006a510 g     O .bss	0000000000000008              glad_glVertexAttribPointer
+0000000000069110 g     O .bss	0000000000000008              glad_glClear
+000000000006a4b8 g     O .bss	0000000000000008              glad_glVertexAttribL4dv
+0000000000069c20 g     O .bss	0000000000000008              glad_glPolygonMode
+0000000000069130 g     O .bss	0000000000000008              glad_glClearBufferfv
+0000000000031570 g     F .text	00000000000001a3              _glfwPlatformSetWindowMonitor
+0000000000069ab0 g     O .bss	0000000000000008              glad_glMapNamedBuffer
+000000000006a230 g     O .bss	0000000000000008              glad_glUnmapNamedBuffer
+00000000000693d0 g     O .bss	0000000000000008              glad_glDispatchComputeIndirect
+0000000000069118 g     O .bss	0000000000000008              glad_glClearBufferData
+0000000000069840 g     O .bss	0000000000000008              glad_glGetTexParameterfv
+000000000006a0e8 g     O .bss	0000000000000008              glad_glUniform2i
+0000000000023980 g     F .text	0000000000000073              glfwSetClipboardString
+0000000000024de0 g     F .text	000000000000009e              glfwGetVideoMode
+00000000000698b0 g     O .bss	0000000000000008              glad_glGetUniformBlockIndex
+00000000000295d0 g     F .text	0000000000000222              _glfwPlatformInit
+0000000000018494  w    F .text	000000000000002a              _ZSt8_DestroyIPjEvT_S1_
+000000000006a508 g     O .bss	0000000000000008              glad_glVertexAttribP4uiv
+0000000000000000       F *UND*	0000000000000000              XFindContext
+00000000000187b0  w    F .text	0000000000000143              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag
+0000000000017636  w    F .text	000000000000002a              _ZNSt12_Vector_baseIjSaIjEEC2ERKS0_
+0000000000000000       F *UND*	0000000000000000              XPeekEvent
+0000000000068ee0 g     O .bss	0000000000000040              projection
+0000000000069158 g     O .bss	0000000000000008              glad_glClearDepthf
+0000000000000000       F *UND*	0000000000000000              __cxa_begin_catch@@CXXABI_1.3
+0000000000032110 g     F .text	000000000000012f              _glfwPlatformPollEvents
+0000000000000000       F *UND*	0000000000000000              abs@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              strspn@@GLIBC_2.2.5
+0000000000018ae6  w    F .text	0000000000000032              _ZNSt12_Vector_baseIjSaIjEE17_Vector_impl_dataC2Ev
+0000000000069a98 g     O .bss	0000000000000008              glad_glLogicOp
+0000000000027560 g     F .text	00000000000000b1              glfwGetWindowSize
+0000000000000000       F *UND*	0000000000000000              XkbKeycodeToKeysym
+0000000000069050 g     O .bss	0000000000000008              glad_glBindTexture
+0000000000000000       F *UND*	0000000000000000              round@@GLIBC_2.2.5
+0000000000017a9c  w    F .text	0000000000000066              _ZNSt12_Vector_baseIjSaIjEEC2EmRKS0_
+0000000000028620 g     F .text	00000000000001cd              glfwSetWindowAttrib
+0000000000000000       F *UND*	0000000000000000              XSetWMHints
+0000000000069da0 g     O .bss	0000000000000008              glad_glProgramUniformMatrix3x2fv
+0000000000069928 g     O .bss	0000000000000008              glad_glGetVertexAttribdv
+0000000000015e74  w    F .text	000000000000001f              _ZN3glm3absIfEET_S1_
+0000000000034c90 g     F .text	000000000000026f              _glfwPlatformCreateWindowSurface
+0000000000023b10 g     F .text	0000000000000123              glfwSetTime
+0000000000000000  w    F *UND*	0000000000000000              __cxa_finalize@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              strlen@@GLIBC_2.2.5
+0000000000068f38 g     O .bss	0000000000000004              _ZN7Display5widthE
+00000000000291b0 g     F .text	0000000000000141              glfwWaitEventsTimeout
+00000000000697f0 g     O .bss	0000000000000008              glad_glGetString
+0000000000069910 g     O .bss	0000000000000008              glad_glGetVertexAttribIuiv
+0000000000068fd8 g     O .bss	0000000000000008              glad_glBindAttribLocation
+0000000000069b00 g     O .bss	0000000000000008              glad_glMultiDrawElementsIndirect
+0000000000068fb8 g     O .bss	0000000000000008              glad_glBeginConditionalRender
+0000000000069ba0 g     O .bss	0000000000000008              glad_glNamedRenderbufferStorage
+000000000001fe20 g     F .text	0000000000000134              _glfwInputKey
+0000000000033c40 g     F .text	0000000000000089              _glfwPlatformSetCursorMode
+0000000000069f90 g     O .bss	0000000000000008              glad_glTexParameteri
+0000000000069f60 g     O .bss	0000000000000008              glad_glTexImage3D
+00000000000202e0 g     F .text	0000000000000028              _glfwInputJoystickAxis
+0000000000017cb0  w    F .text	0000000000000080              _ZN3glmplIfLNS_9qualifierE0EEENS_3vecILi4ET_XT0_EEERKS4_S6_
+0000000000000000       F *UND*	0000000000000000              inotify_rm_watch@@GLIBC_2.4
+0000000000021660 g     F .text	00000000000000ac              glfwSetCharCallback
+0000000000069340 g     O .bss	0000000000000008              glad_glDeleteSamplers
+0000000000000000       F *UND*	0000000000000000              strncmp@@GLIBC_2.2.5
+000000000006a3e8 g     O .bss	0000000000000008              glad_glVertexAttribI1uiv
+00000000000191ee  w    F .text	000000000000006e              _ZSt14__copy_move_a2ILb0EPK6VertexPS0_ET1_T0_S5_S4_
+0000000000000000       F *UND*	0000000000000000              XSetWMNormalHints
+0000000000026020 g     F .text	0000000000000044              _glfwInputWindowSize
+0000000000069ff0 g     O .bss	0000000000000008              glad_glTextureBufferRange
+00000000000250d0 g     F .text	00000000000000c6              glfwGetGammaRamp
+0000000000020420 g     F .text	0000000000000168              _glfwAllocJoystick
+0000000000018049  w    F .text	00000000000000c9              _ZN3glm6detail16compute_vec4_mulIfLNS_9qualifierE0ELb0EE4callERKNS_3vecILi4EfLS2_0EEES7_
+0000000000069c90 g     O .bss	0000000000000008              glad_glProgramUniform1uiv
+0000000000014d69 g     F .text	0000000000000d20              main
+0000000000000000       F *UND*	0000000000000000              _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@@GLIBCXX_3.4
+0000000000019507 g     F .text	0000000000000230              _ZN7Display6createEb
+0000000000015ee8  w    F .text	0000000000000054              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC1IifiiEET_T0_T1_T2_
+0000000000033ad0 g     F .text	00000000000000cb              _glfwPlatformPostEmptyEvent
+000000000006a340 g     O .bss	0000000000000008              glad_glVertexAttrib4Nub
+0000000000016b19  w    F .text	0000000000000788              _ZN3glmmlIfLNS_9qualifierE0EEENS_3matILi4ELi4ET_XT0_EEERKS4_S6_
+0000000000069e08 g     O .bss	0000000000000008              glad_glReadPixels
+0000000000017b02  w    F .text	0000000000000057              _ZNKSt6vectorIjSaIjEE5beginEv
+0000000000069a00 g     O .bss	0000000000000008              glad_glInvalidateSubFramebuffer
+0000000000068f54 g     O .bss	0000000000000004              GLAD_GL_VERSION_1_1
+0000000000018a45  w    F .text	000000000000002e              _ZNSt16allocator_traitsISaI6VertexEE8allocateERS1_m
+00000000000691a8 g     O .bss	0000000000000008              glad_glClientWaitSync
+0000000000016ac8  w    F .text	0000000000000051              _ZNK3glm3matILi4ELi4EfLNS_9qualifierE0EEixEi
+00000000000192dc  w    F .text	0000000000000021              _ZSt12__niter_baseIPK6VertexSt6vectorIS0_SaIS0_EEET_N9__gnu_cxx17__normal_iteratorIS6_T0_EE
+0000000000069a90 g     O .bss	0000000000000008              glad_glLinkProgram
+00000000000699d8 g     O .bss	0000000000000008              glad_glInvalidateBufferData
+0000000000069638 g     O .bss	0000000000000008              glad_glGetFloati_v
+0000000000069388 g     O .bss	0000000000000008              glad_glDepthRangeArrayv
+0000000000069318 g     O .bss	0000000000000008              glad_glDeleteFramebuffers
+0000000000039b90 g     F .text	0000000000000088              glfwGetEGLSurface
+000000000003aa90 g     F .text	00000000000001c1              _glfwInitJoysticksLinux
+0000000000069ae8 g     O .bss	0000000000000008              glad_glMultiDrawArraysIndirectCount
+000000000006a2f0 g     O .bss	0000000000000008              glad_glVertexAttrib2sv
+000000000006a3f8 g     O .bss	0000000000000008              glad_glVertexAttribI2iv
+000000000006a158 g     O .bss	0000000000000008              glad_glUniform4f
+0000000000018d92  w    F .text	0000000000000013              _ZN9__gnu_cxx13new_allocatorI6VertexEC2ERKS2_
+0000000000019074  w    F .text	0000000000000018              _ZNK9__gnu_cxx13new_allocatorIjE8max_sizeEv
+0000000000019755 g     F .text	000000000000001f              _ZN7Display6updateEv
+00000000000699a0 g     O .bss	0000000000000008              glad_glGetnSeparableFilter
+00000000000692a8 g     O .bss	0000000000000008              glad_glCreateProgramPipelines
+00000000000193d8  w    F .text	0000000000000012              _ZSt12__niter_baseIPK6VertexET_S3_
+000000000002fa00 g     F .text	0000000000000053              _glfwPlatformShowWindow
+0000000000035f00 g     F .text	0000000000000044              _glfwPlatformDestroyMutex
+000000000006a0f0 g     O .bss	0000000000000008              glad_glUniform2iv
+000000000006a2e8 g     O .bss	0000000000000008              glad_glVertexAttrib2s
+0000000000017660  w    F .text	0000000000000051              _ZNSt12_Vector_baseIjSaIjEED2Ev
+0000000000069708 g     O .bss	0000000000000008              glad_glGetProgramInterfaceiv
+0000000000000000       F *UND*	0000000000000000              XFilterEvent
+0000000000000000       F *UND*	0000000000000000              XIconifyWindow
+0000000000069a38 g     O .bss	0000000000000008              glad_glIsProgram
+0000000000069d38 g     O .bss	0000000000000008              glad_glProgramUniform4i
+0000000000000000       F *UND*	0000000000000000              strncpy@@GLIBC_2.2.5
+0000000000018be1  w    F .text	0000000000000035              _ZSt18uninitialized_copyIPKjPjET0_T_S4_S3_
+00000000000182f0  w    F .text	0000000000000036              _ZNSt12_Vector_baseIjSaIjEE12_Vector_implC2ERKS0_
+0000000000028a10 g     F .text	000000000000007e              glfwSetWindowUserPointer
+00000000000691d0 g     O .bss	0000000000000008              glad_glColorP3uiv
+0000000000020be0 g     F .text	0000000000000045              glfwRawMouseMotionSupported
+000000000001926e  w    F .text	000000000000006e              _ZSt14__copy_move_a2ILb0EPKjPjET1_T0_S4_S3_
+000000000006a0c8 g     O .bss	0000000000000008              glad_glUniform2d
+00000000000191dc  w    F .text	0000000000000012              _ZSt12__miter_baseIPK6VertexET_S3_
+00000000000696b0 g     O .bss	0000000000000008              glad_glGetNamedBufferParameteriv
+0000000000000000       F *UND*	0000000000000000              _ZSt20__throw_length_errorPKc@@GLIBCXX_3.4
+0000000000069d60 g     O .bss	0000000000000008              glad_glProgramUniformMatrix2fv
+000000000006a4b0 g     O .bss	0000000000000008              glad_glVertexAttribL4d
+0000000000069b18 g     O .bss	0000000000000008              glad_glMultiTexCoordP1uiv
+0000000000021920 g     F .text	00000000000000ac              glfwSetCursorEnterCallback
+0000000000000000       F *UND*	0000000000000000              inotify_add_watch@@GLIBC_2.4
+0000000000069a28 g     O .bss	0000000000000008              glad_glIsEnabledi
+000000000006a328 g     O .bss	0000000000000008              glad_glVertexAttrib4Nbv
+0000000000027310 g     F .text	00000000000000ec              glfwSetWindowIcon
+00000000000181d5  w    F .text	0000000000000085              _ZNSt6vectorI6VertexSaIS0_EE17_S_check_init_lenEmRKS1_
+00000000000691e8 g     O .bss	0000000000000008              glad_glCompileShader
+0000000000000000       F *UND*	0000000000000000              memset@@GLIBC_2.2.5
+0000000000017a8a  w    F .text	0000000000000012              _ZNKSt12_Vector_baseIjSaIjEE19_M_get_Tp_allocatorEv
+0000000000069ee0 g     O .bss	0000000000000008              glad_glStencilMaskSeparate
+0000000000068008 g     O .data	0000000000000000              .hidden __dso_handle
+0000000000029390 g     F .text	000000000000002f              _glfwReleaseErrorHandlerX11
+0000000000019737 g     F .text	000000000000001e              _ZN7Display6isOpenEv
+000000000006a208 g     O .bss	0000000000000008              glad_glUniformMatrix4x2fv
+0000000000000000       F *UND*	0000000000000000              XSetWMProtocols
+00000000000183a2  w    F .text	0000000000000085              _ZNSt6vectorIjSaIjEE17_S_check_init_lenEmRKS0_
+000000000006a140 g     O .bss	0000000000000008              glad_glUniform3uiv
+0000000000000000       F *UND*	0000000000000000              XCreateFontCursor
+0000000000030f90 g     F .text	000000000000012c              _glfwPlatformRestoreWindow
+00000000000302c0 g     F .text	000000000000029c              _glfwPlatformSetWindowIcon
+0000000000069cd8 g     O .bss	0000000000000008              glad_glProgramUniform3d
+0000000000069ee8 g     O .bss	0000000000000008              glad_glStencilOp
+0000000000035cb0 g     F .text	0000000000000014              _glfwPlatformGetTimerFrequency
+000000000006a2a0 g     O .bss	0000000000000008              glad_glVertexAttrib1dv
+000000000006a128 g     O .bss	0000000000000008              glad_glUniform3i
+000000000001ec30 g     F .text	00000000000000eb              glfwMakeContextCurrent
+0000000000069ea8 g     O .bss	0000000000000008              glad_glShaderBinary
+0000000000029180 g     F .text	0000000000000030              glfwWaitEvents
+0000000000069578 g     O .bss	0000000000000008              glad_glGetActiveAttrib
+0000000000000000       F *UND*	0000000000000000              XSetClassHint
+00000000000691a0 g     O .bss	0000000000000008              glad_glClearTexSubImage
+0000000000019024  w    F .text	0000000000000050              _ZSt4copyIPK6VertexPS0_ET0_T_S5_S4_
+0000000000068fb0 g     O .bss	0000000000000008              glad_glAttachShader
+000000000003b750 g     F .text	0000000000000127              _glfwPlatformPollJoystick
+000000000006a038 g     O .bss	0000000000000008              glad_glTextureStorage2DMultisample
+0000000000027e90 g     F .text	0000000000000077              glfwIconifyWindow
+0000000000019344  w    F .text	0000000000000016              _ZSt12__niter_wrapIP6VertexET_RKS2_S2_
+0000000000069398 g     O .bss	0000000000000008              glad_glDepthRangef
+0000000000069ad8 g     O .bss	0000000000000008              glad_glMultiDrawArrays
+00000000000693a0 g     O .bss	0000000000000008              glad_glDetachShader
+0000000000069390 g     O .bss	0000000000000008              glad_glDepthRangeIndexed
+000000000006a360 g     O .bss	0000000000000008              glad_glVertexAttrib4bv
+0000000000018c8b  w    F .text	00000000000000c9              _ZN3glm6detail16compute_vec4_addIfLNS_9qualifierE0ELb0EE4callERKNS_3vecILi4EfLS2_0EEES7_
+00000000000699e8 g     O .bss	0000000000000008              glad_glInvalidateFramebuffer
+0000000000020740 g     F .text	000000000000004c              _glfwCenterCursorInContentArea
+000000000006a558 g     O .bss	0000000000000008              glad_glViewportArrayv
+0000000000000000       F *UND*	0000000000000000              pthread_key_create@@GLIBC_2.2.5
+0000000000068fc8 g     O .bss	0000000000000008              glad_glBeginQueryIndexed
+00000000000692d0 g     O .bss	0000000000000008              glad_glCreateShaderProgramv
+0000000000069bd8 g     O .bss	0000000000000008              glad_glPatchParameteri
+0000000000031e10 g     F .text	00000000000000c2              _glfwPlatformGetWindowOpacity
+00000000000695a8 g     O .bss	0000000000000008              glad_glGetActiveUniformBlockiv
+00000000000193fc  w    F .text	0000000000000012              _ZNK9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS1_SaIS1_EEE4baseEv
+0000000000069518 g     O .bss	0000000000000008              glad_glGenBuffers
+000000000006a068 g     O .bss	0000000000000008              glad_glTextureView
+000000000006a570 g     O .bss	0000000000000008              glad_glWaitSync
+0000000000069ae0 g     O .bss	0000000000000008              glad_glMultiDrawArraysIndirect
+0000000000069250 g     O .bss	0000000000000008              glad_glCopyTexImage1D
+000000000001925c  w    F .text	0000000000000012              _ZSt12__miter_baseIPKjET_S2_
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@@GLIBCXX_3.4.21
+0000000000000000       F *UND*	0000000000000000              XSelectInput
+0000000000069830 g     O .bss	0000000000000008              glad_glGetTexParameterIiv
+000000000006a308 g     O .bss	0000000000000008              glad_glVertexAttrib3f
+0000000000068fc0 g     O .bss	0000000000000008              glad_glBeginQuery
+0000000000069e10 g     O .bss	0000000000000008              glad_glReadnPixels
+0000000000069b58 g     O .bss	0000000000000008              glad_glNamedBufferStorage
+0000000000069ca8 g     O .bss	0000000000000008              glad_glProgramUniform2f
+0000000000017738  w    F .text	00000000000000b4              _ZNSt6vectorIjSaIjEE19_M_range_initializeIPKjEEvT_S5_St20forward_iterator_tag
+0000000000000000       F *UND*	0000000000000000              vsnprintf@@GLIBC_2.2.5
+0000000000069870 g     O .bss	0000000000000008              glad_glGetTextureParameterIuiv
+00000000000696a0 g     O .bss	0000000000000008              glad_glGetMultisamplefv
+00000000000692c0 g     O .bss	0000000000000008              glad_glCreateSamplers
+00000000000201e0 g     F .text	000000000000003e              _glfwInputCursorEnter
+00000000000693f8 g     O .bss	0000000000000008              glad_glDrawBuffer
+0000000000018dcc  w    F .text	000000000000001e              _ZNSt16allocator_traitsISaI6VertexEE8max_sizeERKS1_
+0000000000000000       F *UND*	0000000000000000              XCreateColormap
+0000000000035fb0 g     F .text	0000000000000055              _glfwPlatformUnlockMutex
+000000000006a530 g     O .bss	0000000000000008              glad_glVertexP3ui
+0000000000031ee0 g     F .text	0000000000000077              _glfwPlatformSetWindowOpacity
+000000000006a248 g     O .bss	0000000000000008              glad_glValidateProgram
+000000000006a430 g     O .bss	0000000000000008              glad_glVertexAttribI4bv
+00000000000382d0 g     F .text	000000000000007e              _glfwTerminateEGL
+00000000000699d0 g     O .bss	0000000000000008              glad_glHint
+000000000001665e  w    F .text	000000000000011f              _ZNSt6vectorIjSaIjEEC1ERKS1_
+0000000000069188 g     O .bss	0000000000000008              glad_glClearNamedFramebufferuiv
+000000000001940e  w    F .text	0000000000000084              _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mI6VertexEEPT_PKS4_S7_S5_
+00000000000182f0  w    F .text	0000000000000036              _ZNSt12_Vector_baseIjSaIjEE12_Vector_implC1ERKS0_
+0000000000000000       F *UND*	0000000000000000              __assert_fail@@GLIBC_2.2.5
+0000000000069c00 g     O .bss	0000000000000008              glad_glPointParameterfv
+000000000006a3d8 g     O .bss	0000000000000008              glad_glVertexAttribI1iv
+0000000000031720 g     F .text	000000000000004e              _glfwPlatformWindowFocused
+0000000000069580 g     O .bss	0000000000000008              glad_glGetActiveSubroutineName
+0000000000000000       F *UND*	0000000000000000              calloc@@GLIBC_2.2.5
+0000000000069de0 g     O .bss	0000000000000008              glad_glProgramUniformMatrix4x3fv
+000000000006a3d0 g     O .bss	0000000000000008              glad_glVertexAttribI1i
+0000000000069dd0 g     O .bss	0000000000000008              glad_glProgramUniformMatrix4x2fv
+000000000006a3b8 g     O .bss	0000000000000008              glad_glVertexAttribBinding
+0000000000068010  w    O .data	0000000000000008              .hidden DW.ref.__gxx_personality_v0
+000000000006a008 g     O .bss	0000000000000008              glad_glTextureParameterf
+0000000000035d70 g     F .text	000000000000003e              _glfwPlatformDestroyTls
+00000000000694f0 g     O .bss	0000000000000008              glad_glFramebufferTexture1D
+000000000002e570 g     F .text	000000000000005a              glfwGetX11Adapter
+0000000000069430 g     O .bss	0000000000000008              glad_glDrawElementsInstancedBaseVertex
+0000000000000000       F *UND*	0000000000000000              _ZNK14EngineGraphics4Mesh6renderEv
+0000000000000000       F *UND*	0000000000000000              Xutf8LookupString
+0000000000033ba0 g     F .text	0000000000000092              _glfwPlatformGetCursorPos
+000000000006a030 g     O .bss	0000000000000008              glad_glTextureStorage2D
+00000000000699a8 g     O .bss	0000000000000008              glad_glGetnTexImage
+00000000000175b6  w    F .text	0000000000000012              _ZNSt12_Vector_baseI6VertexSaIS0_EE19_M_get_Tp_allocatorEv
+0000000000069010 g     O .bss	0000000000000008              glad_glBindFragDataLocationIndexed
+0000000000018aa8  w    F .text	0000000000000013              _ZNSt12_Destroy_auxILb1EE9__destroyIP6VertexEEvT_S4_
+000000000006a048 g     O .bss	0000000000000008              glad_glTextureStorage3DMultisample
+00000000000698d0 g     O .bss	0000000000000008              glad_glGetUniformdv
+000000000006a3f0 g     O .bss	0000000000000008              glad_glVertexAttribI2i
+0000000000018c29  w    F .text	0000000000000031              _ZNSt20__uninitialized_copyILb1EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS4_SaIS4_EEEEPS4_EET0_T_SD_SC_
+0000000000069c38 g     O .bss	0000000000000008              glad_glPopDebugGroup
+000000000006a1d8 g     O .bss	0000000000000008              glad_glUniformMatrix3x2fv
+000000000006a398 g     O .bss	0000000000000008              glad_glVertexAttrib4sv
+0000000000069838 g     O .bss	0000000000000008              glad_glGetTexParameterIuiv
+0000000000017616  w    F .text	000000000000001f              _ZNSt12_Vector_baseIjSaIjEE12_Vector_implD1Ev
+0000000000069598 g     O .bss	0000000000000008              glad_glGetActiveUniform
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm@@GLIBCXX_3.4.21
+0000000000069d90 g     O .bss	0000000000000008              glad_glProgramUniformMatrix3fv
+000000000006a288 g     O .bss	0000000000000008              glad_glVertexArrayVertexBuffer
+000000000006a470 g     O .bss	0000000000000008              glad_glVertexAttribIFormat
+000000000001e510 g     F .text	000000000000071f              _glfwRefreshContextAttribs
+000000000002e180 g     F .text	00000000000001f7              _glfwPlatformGetGammaRamp
+000000000001db02 g     F .text	0000000000000186              gladLoadGLLoader
+0000000000000000       F *UND*	0000000000000000              _ZSt19__throw_logic_errorPKc@@GLIBCXX_3.4
+0000000000025a20 g     F .text	000000000000004a              glfwVulkanSupported
+00000000000280d0 g     F .text	0000000000000077              glfwRequestWindowAttention
+0000000000069a18 g     O .bss	0000000000000008              glad_glIsBuffer
+00000000000244e0 g     F .text	0000000000000029              _glfwCompareVideoModes
+0000000000069ac8 g     O .bss	0000000000000008              glad_glMemoryBarrierByRegion
+0000000000069dc0 g     O .bss	0000000000000008              glad_glProgramUniformMatrix4fv
+0000000000069648 g     O .bss	0000000000000008              glad_glGetFragDataIndex
+00000000000693f0 g     O .bss	0000000000000008              glad_glDrawArraysInstancedBaseInstance
+0000000000030750 g     F .text	0000000000000073              _glfwPlatformGetWindowSize
+00000000000175f6  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorIjEC1Ev
+000000000003bbc8 g     F .fini	0000000000000000              .hidden _fini
+0000000000000000       F *UND*	0000000000000000              open@@GLIBC_2.2.5
+0000000000016092  w    F .text	0000000000000025              _ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_
+000000000006a330 g     O .bss	0000000000000008              glad_glVertexAttrib4Niv
+0000000000018d54  w    F .text	0000000000000016              _ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_
+000000000006a1f8 g     O .bss	0000000000000008              glad_glUniformMatrix4fv
+0000000000069c78 g     O .bss	0000000000000008              glad_glProgramUniform1i
+0000000000068f58 g     O .bss	0000000000000004              GLAD_GL_VERSION_1_2
+00000000000177ec  w    F .text	0000000000000012              _ZNSt12_Vector_baseIjSaIjEE19_M_get_Tp_allocatorEv
+0000000000069268 g     O .bss	0000000000000008              glad_glCopyTexSubImage2D
+000000000006a428 g     O .bss	0000000000000008              glad_glVertexAttribI3uiv
+00000000000692f0 g     O .bss	0000000000000008              glad_glCullFace
+0000000000069978 g     O .bss	0000000000000008              glad_glGetnMinmax
+0000000000000000       F *UND*	0000000000000000              dlclose@@GLIBC_2.2.5
+0000000000069878 g     O .bss	0000000000000008              glad_glGetTextureParameterfv
+0000000000030eb0 g     F .text	0000000000000056              _glfwPlatformGetWindowContentScale
+000000000002df20 g     F .text	0000000000000252              _glfwPlatformGetVideoModes
+00000000000692e0 g     O .bss	0000000000000008              glad_glCreateTransformFeedbacks
+0000000000018dea  w    F .text	000000000000002f              _ZSt3minImERKT_S2_S2_
+0000000000000000       F *UND*	0000000000000000              XInternAtom
+0000000000018e6a  w    F .text	0000000000000031              _ZNSt20__uninitialized_copyILb1EE13__uninit_copyIPK6VertexPS2_EET0_T_S7_S6_
+0000000000069680 g     O .bss	0000000000000008              glad_glGetIntegeri_v
+000000000006a420 g     O .bss	0000000000000008              glad_glVertexAttribI3ui
+0000000000018198  w    F .text	000000000000000e              _ZSt19__iterator_categoryIPK6VertexENSt15iterator_traitsIT_E17iterator_categoryERKS4_
+0000000000069778 g     O .bss	0000000000000008              glad_glGetQueryIndexediv
+0000000000069bf8 g     O .bss	0000000000000008              glad_glPointParameterf
+0000000000069b40 g     O .bss	0000000000000008              glad_glMultiTexCoordP4ui
+000000000006a348 g     O .bss	0000000000000008              glad_glVertexAttrib4Nubv
+00000000000693c0 g     O .bss	0000000000000008              glad_glDisablei
+0000000000069088 g     O .bss	0000000000000008              glad_glBlendColor
+0000000000000000       F *UND*	0000000000000000              pthread_mutex_unlock@@GLIBC_2.2.5
+0000000000027d10 g     F .text	000000000000017e              glfwSetWindowOpacity
+0000000000068fa8 g     O .bss	0000000000000008              glad_glActiveTexture
+0000000000069df8 g     O .bss	0000000000000008              glad_glQueryCounter
+00000000000694b0 g     O .bss	0000000000000008              glad_glFenceSync
+0000000000000000       F *UND*	0000000000000000              XrmGetResource
+00000000000290a0 g     F .text	00000000000000ac              glfwSetWindowContentScaleCallback
+0000000000017616  w    F .text	000000000000001f              _ZNSt12_Vector_baseIjSaIjEE12_Vector_implD2Ev
+0000000000069220 g     O .bss	0000000000000008              glad_glCompressedTextureSubImage1D
+0000000000069868 g     O .bss	0000000000000008              glad_glGetTextureParameterIiv
+0000000000017f66  w    F .text	000000000000000f              _ZN3glm3vecILi4EfLNS_9qualifierE0EE6lengthEv
+0000000000069168 g     O .bss	0000000000000008              glad_glClearNamedBufferSubData
+000000000001624a  w    F .text	000000000000001f              _ZNSaI6VertexED1Ev
+0000000000025a70 g     F .text	00000000000000df              glfwGetRequiredInstanceExtensions
+0000000000000000       F *UND*	0000000000000000              XSetInputFocus
+000000000003b550 g     F .text	00000000000001fd              _glfwDetectJoystickConnectionLinux
+0000000000018550  w    F .text	0000000000000021              _ZN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS1_SaIS1_EEEC2ERKS3_
+0000000000069eb8 g     O .bss	0000000000000008              glad_glShaderStorageBlockBinding
+0000000000069b60 g     O .bss	0000000000000008              glad_glNamedBufferSubData
+0000000000069028 g     O .bss	0000000000000008              glad_glBindImageTextures
+0000000000069a30 g     O .bss	0000000000000008              glad_glIsFramebuffer
+00000000000261d0 g     F .text	0000000000000043              _glfwInputWindowCloseRequest
+0000000000069d98 g     O .bss	0000000000000008              glad_glProgramUniformMatrix3x2dv
+0000000000069a70 g     O .bss	0000000000000008              glad_glIsTexture
+00000000000696e8 g     O .bss	0000000000000008              glad_glGetObjectPtrLabel
+0000000000018326  w    F .text	0000000000000039              _ZNSt12_Vector_baseIjSaIjEE13_M_deallocateEPjm
+0000000000069368 g     O .bss	0000000000000008              glad_glDeleteVertexArrays
+00000000000305f0 g     F .text	00000000000000f1              _glfwPlatformSetWindowPos
+00000000000172a2  w    F .text	0000000000000032              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_
+000000000002daf0 g     F .text	0000000000000056              _glfwPlatformGetMonitorContentScale
+0000000000000000       F *UND*	0000000000000000              XAllocWMHints
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv@@GLIBCXX_3.4.21
+000000000001dc90 g     F .text	00000000000003fb              _glfwIsValidContextConfig
+0000000000069918 g     O .bss	0000000000000008              glad_glGetVertexAttribLdv
+0000000000069700 g     O .bss	0000000000000008              glad_glGetProgramInfoLog
+00000000000173ba  w    F .text	000000000000001f              _ZNSt12_Vector_baseI6VertexSaIS0_EE12_Vector_implD1Ev
+000000000006a268 g     O .bss	0000000000000008              glad_glVertexArrayAttribIFormat
+0000000000036930 g     F .text	0000000000000a7d              _glfwCreateContextGLX
+000000000001937b  w    F .text	0000000000000012              _ZSt12__niter_baseIPjET_S1_
+000000000001622a  w    F .text	000000000000001f              _ZNSaI6VertexEC2Ev
+0000000000015fe4  w    F .text	00000000000000ae              _ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEC1ERKf
+00000000000690c0 g     O .bss	0000000000000008              glad_glBlendFuncSeparatei
+0000000000068f98 g     O .bss	0000000000000004              GLAD_GL_VERSION_4_6
+0000000000069ff8 g     O .bss	0000000000000008              glad_glTextureParameterIiv
+0000000000068f20 g     O .bss	0000000000000008              deltaTime
+0000000000069bd0 g     O .bss	0000000000000008              glad_glPatchParameterfv
+0000000000069c88 g     O .bss	0000000000000008              glad_glProgramUniform1ui
+000000000001862e  w    F .text	0000000000000021              _ZN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEC1ERKS2_
+00000000000690b0 g     O .bss	0000000000000008              glad_glBlendFunc
+0000000000069060 g     O .bss	0000000000000008              glad_glBindTextures
+0000000000000000       F *UND*	0000000000000000              XGetWMNormalHints
+000000000006a118 g     O .bss	0000000000000008              glad_glUniform3f
+0000000000000000       F *UND*	0000000000000000              memcpy@@GLIBC_2.14
+0000000000068f90 g     O .bss	0000000000000004              GLAD_GL_VERSION_4_4
+0000000000069150 g     O .bss	0000000000000008              glad_glClearDepth
+0000000000000000       F *UND*	0000000000000000              XGetVisualInfo
+0000000000000000       F *UND*	0000000000000000              XInitThreads
+0000000000018e9c  w    F .text	0000000000000013              _ZN9__gnu_cxx13new_allocatorIjEC1ERKS1_
+000000000006a160 g     O .bss	0000000000000008              glad_glUniform4fv
+000000000006a500 g     O .bss	0000000000000008              glad_glVertexAttribP4ui
+0000000000000000       F *UND*	0000000000000000              XMoveWindow
+000000000006a150 g     O .bss	0000000000000008              glad_glUniform4dv
+0000000000016366  w    F .text	000000000000001f              _ZNSaIjEC2Ev
+0000000000069238 g     O .bss	0000000000000008              glad_glCopyBufferSubData
+0000000000018e1a  w    F .text	0000000000000050              _ZN9__gnu_cxx13new_allocatorI6VertexE8allocateEmPKv
+0000000000069e58 g     O .bss	0000000000000008              glad_glSamplerParameterf
+0000000000018a73  w    F .text	0000000000000035              _ZSt18uninitialized_copyIPK6VertexPS0_ET0_T_S5_S4_
+000000000006a188 g     O .bss	0000000000000008              glad_glUniformBlockBinding
+0000000000069e28 g     O .bss	0000000000000008              glad_glRenderbufferStorageMultisample
+00000000000694a8 g     O .bss	0000000000000008              glad_glEndTransformFeedback
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc@@GLIBCXX_3.4.21
+00000000000693b0 g     O .bss	0000000000000008              glad_glDisableVertexArrayAttrib
+00000000000268f0 g     F .text	0000000000000728              glfwWindowHint
+0000000000069db0 g     O .bss	0000000000000008              glad_glProgramUniformMatrix3x4fv
+0000000000000000       F *UND*	0000000000000000              XkbGetState
+0000000000068f6c g     O .bss	0000000000000004              GLAD_GL_VERSION_2_1
+0000000000016a20  w    F .text	0000000000000020              _ZN3glm7radiansIfEET_S1_
+0000000000028b20 g     F .text	00000000000000ac              glfwSetWindowPosCallback
+0000000000017d30  w    F .text	0000000000000236              _ZN3glm16perspectiveRH_NOIfEENS_3matILi4ELi4ET_LNS_9qualifierE0EEES2_S2_S2_S2_
+0000000000000000       F *UND*	0000000000000000              XSaveContext
+0000000000000000       F *UND*	0000000000000000              XkbQueryExtension
+0000000000069298 g     O .bss	0000000000000008              glad_glCreateFramebuffers
+0000000000069590 g     O .bss	0000000000000008              glad_glGetActiveSubroutineUniformiv
+0000000000038500 g     F .text	0000000000000d2c              _glfwCreateContextEGL
+00000000000234b0 g     F .text	00000000000004d0              glfwGetGamepadState
+0000000000069a60 g     O .bss	0000000000000008              glad_glIsShader
+0000000000000000       F *UND*	0000000000000000              XChangeProperty
+0000000000069f20 g     O .bss	0000000000000008              glad_glTexCoordP2uiv
+0000000000069d58 g     O .bss	0000000000000008              glad_glProgramUniformMatrix2dv
+000000000002d270 g     F .text	0000000000000290              _glfwSetVideoModeX11
+0000000000069048 g     O .bss	0000000000000008              glad_glBindSamplers
+0000000000000000       F *UND*	0000000000000000              XrmDestroyDatabase
+000000000006a0a0 g     O .bss	0000000000000008              glad_glUniform1fv
+0000000000018112  w    F .text	0000000000000036              _ZNSt12_Vector_baseI6VertexSaIS0_EE12_Vector_implC1ERKS1_
+0000000000018ef4  w    F .text	0000000000000047              _ZN9__gnu_cxx13new_allocatorIjE8allocateEmPKv
+000000000006a1e8 g     O .bss	0000000000000008              glad_glUniformMatrix3x4fv
+0000000000022270 g     F .text	000000000000013d              glfwGetJoystickGUID
+0000000000069fe8 g     O .bss	0000000000000008              glad_glTextureBuffer
+000000000006a370 g     O .bss	0000000000000008              glad_glVertexAttrib4dv
+00000000000697b8 g     O .bss	0000000000000008              glad_glGetSamplerParameterIuiv
+0000000000030f10 g     F .text	0000000000000075              _glfwPlatformIconifyWindow
+0000000000021200 g     F .text	00000000000000e8              glfwCreateCursor
+0000000000069b30 g     O .bss	0000000000000008              glad_glMultiTexCoordP3ui
+0000000000069eb0 g     O .bss	0000000000000008              glad_glShaderSource
+00000000000699c0 g     O .bss	0000000000000008              glad_glGetnUniformiv
+0000000000000000       F *UND*	0000000000000000              XLookupString
+0000000000000000       F *UND*	0000000000000000              XMoveResizeWindow
+0000000000000000       F *UND*	0000000000000000              __cxa_atexit@@GLIBC_2.2.5
+0000000000015a89 g     F .text	0000000000000300              _Z13processInputsv
+00000000000188f4  w    F .text	000000000000005a              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC1Effff
+0000000000000000       F *UND*	0000000000000000              XPending
+0000000000031b30 g     F .text	00000000000002d2              _glfwPlatformSetWindowFloating
+00000000000698f0 g     O .bss	0000000000000008              glad_glGetVertexArrayIndexed64iv
+0000000000000000       F *UND*	0000000000000000              XCreateIC
+0000000000031920 g     F .text	00000000000000b5              _glfwPlatformWindowHovered
+000000000002e7e0 g     F .text	000000000000012b              _glfwPushSelectionToManagerX11
+0000000000069400 g     O .bss	0000000000000008              glad_glDrawBuffers
+0000000000069190 g     O .bss	0000000000000008              glad_glClearStencil
+00000000000184be  w    F .text	000000000000002d              _ZNSt16allocator_traitsISaI6VertexEE37select_on_container_copy_constructionERKS1_
+00000000000695b0 g     O .bss	0000000000000008              glad_glGetActiveUniformName
+000000000006a350 g     O .bss	0000000000000008              glad_glVertexAttrib4Nuiv
+0000000000000000       F *UND*	0000000000000000              XkbFreeNames
+00000000000690f8 g     O .bss	0000000000000008              glad_glCheckFramebufferStatus
+00000000000184ec  w    F .text	0000000000000064              _ZNSt12_Vector_baseI6VertexSaIS0_EE17_M_create_storageEm
+0000000000069cc0 g     O .bss	0000000000000008              glad_glProgramUniform2iv
+0000000000069218 g     O .bss	0000000000000008              glad_glCompressedTexSubImage3D
+0000000000019827 g     F .text	000000000000002b              _ZN7Display9isKeyDownEi
+0000000000069ac0 g     O .bss	0000000000000008              glad_glMemoryBarrier
+0000000000018abc  w    F .text	000000000000002a              _ZNSaIjEC2ERKS_
+000000000006a2a8 g     O .bss	0000000000000008              glad_glVertexAttrib1f
+000000000006a258 g     O .bss	0000000000000008              glad_glVertexArrayAttribBinding
+00000000000193c2  w    F .text	0000000000000016              _ZSt12__niter_wrapIPjET_RKS1_S1_
+000000000001f370 g     F .text	000000000000008f              _glfw_fmaxf
+0000000000016126  w    F .text	000000000000001f              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderD1Ev
+0000000000069d48 g     O .bss	0000000000000008              glad_glProgramUniform4ui
+0000000000000000       F *UND*	0000000000000000              clock_gettime@@GLIBC_2.17
+0000000000021c50 g     F .text	0000000000000188              glfwGetJoystickAxes
+000000000006a378 g     O .bss	0000000000000008              glad_glVertexAttrib4f
+0000000000029430 g     F .text	000000000000019a              _glfwCreateCursorX11
+00000000000251a0 g     F .text	00000000000001dc              glfwSetGammaRamp
+000000000006a4e0 g     O .bss	0000000000000008              glad_glVertexAttribP2ui
+00000000000699b8 g     O .bss	0000000000000008              glad_glGetnUniformfv
+0000000000037a70 g     F .text	00000000000000d1              _glfwChooseVisualGLX
+0000000000069980 g     O .bss	0000000000000008              glad_glGetnPixelMapfv
+00000000000174c2  w    F .text	0000000000000035              _ZSt8distanceIPK6VertexENSt15iterator_traitsIT_E15difference_typeES4_S4_
+0000000000069f28 g     O .bss	0000000000000008              glad_glTexCoordP3ui
+0000000000068f7c g     O .bss	0000000000000004              GLAD_GL_VERSION_3_3
+00000000000190ee  w    F .text	000000000000006e              _ZSt14__copy_move_a2ILb0EN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS2_SaIS2_EEEEPS2_ET1_T0_SB_SA_
+00000000000698a0 g     O .bss	0000000000000008              glad_glGetTransformFeedbacki_v
+0000000000000000       F *UND*	0000000000000000              XDestroyIC
+0000000000069ef0 g     O .bss	0000000000000008              glad_glStencilOpSeparate
+0000000000020e80 g     F .text	00000000000000f0              glfwGetMouseButton
+0000000000069d68 g     O .bss	0000000000000008              glad_glProgramUniformMatrix2x3dv
+0000000000069b78 g     O .bss	0000000000000008              glad_glNamedFramebufferParameteri
+0000000000069b98 g     O .bss	0000000000000008              glad_glNamedFramebufferTextureLayer
+0000000000069668 g     O .bss	0000000000000008              glad_glGetGraphicsResetStatus
+0000000000069e00 g     O .bss	0000000000000008              glad_glReadBuffer
+0000000000000000       F *UND*	0000000000000000              strcpy@@GLIBC_2.2.5
+000000000001930f  w    F .text	0000000000000035              _ZSt13__copy_move_aILb0EPK6VertexPS0_ET1_T0_S5_S4_
+0000000000021710 g     F .text	00000000000000ac              glfwSetCharModsCallback
+0000000000000000       F *UND*	0000000000000000              XkbGetMap
+0000000000000000       F *UND*	0000000000000000              _ZN14EngineGraphics6ShaderC1ESt17basic_string_viewIcSt11char_traitsIcEES4_S4_
+0000000000069018 g     O .bss	0000000000000008              glad_glBindFramebuffer
+0000000000069d50 g     O .bss	0000000000000008              glad_glProgramUniform4uiv
+000000000006a238 g     O .bss	0000000000000008              glad_glUseProgram
+0000000000069438 g     O .bss	0000000000000008              glad_glDrawElementsInstancedBaseVertexBaseInstance
+0000000000069538 g     O .bss	0000000000000008              glad_glGenRenderbuffers
+0000000000000000       F *UND*	0000000000000000              XUngrabPointer
+00000000000691f0 g     O .bss	0000000000000008              glad_glCompressedTexImage1D
+0000000000000000       F *UND*	0000000000000000              _ZdlPv@@GLIBCXX_3.4
+0000000000068f74 g     O .bss	0000000000000004              GLAD_GL_VERSION_3_1
+0000000000000000       F *UND*	0000000000000000              select@@GLIBC_2.2.5
+0000000000018ae6  w    F .text	0000000000000032              _ZNSt12_Vector_baseIjSaIjEE17_Vector_impl_dataC1Ev
+000000000001782c  w    F .text	0000000000000038              _ZNKSt6vectorI6VertexSaIS0_EE4sizeEv
+0000000000069bb0 g     O .bss	0000000000000008              glad_glNormalP3ui
+0000000000017be8  w    F .text	0000000000000051              _ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEixEi
+00000000000173ba  w    F .text	000000000000001f              _ZNSt12_Vector_baseI6VertexSaIS0_EE12_Vector_implD2Ev
+0000000000069b90 g     O .bss	0000000000000008              glad_glNamedFramebufferTexture
+0000000000069280 g     O .bss	0000000000000008              glad_glCopyTextureSubImage2D
+00000000000698f8 g     O .bss	0000000000000008              glad_glGetVertexArrayIndexediv
+0000000000069ca0 g     O .bss	0000000000000008              glad_glProgramUniform2dv
+0000000000068f5c g     O .bss	0000000000000004              GLAD_GL_VERSION_1_3
+000000000001792c  w    F .text	0000000000000057              _ZNKSt6vectorI6VertexSaIS0_EE5beginEv
+0000000000029150 g     F .text	0000000000000030              glfwPollEvents
+0000000000030560 g     F .text	0000000000000083              _glfwPlatformGetWindowPos
+0000000000033f00 g     F .text	0000000000000186              _glfwPlatformGetScancodeName
+0000000000069e50 g     O .bss	0000000000000008              glad_glSamplerParameterIuiv
+00000000000697e8 g     O .bss	0000000000000008              glad_glGetShaderiv
+000000000006a100 g     O .bss	0000000000000008              glad_glUniform2uiv
+0000000000000000       F *UND*	0000000000000000              __isoc99_sscanf@@GLIBC_2.7
+0000000000069c60 g     O .bss	0000000000000008              glad_glProgramUniform1dv
+00000000000181a6  w    F .text	000000000000002f              _ZSt10__distanceIPK6VertexENSt15iterator_traitsIT_E15difference_typeES4_S4_St26random_access_iterator_tag
+0000000000069ad0 g     O .bss	0000000000000008              glad_glMinSampleShading
+000000000001626a  w    F .text	00000000000000b3              _ZNSt6vectorI6VertexSaIS0_EEC1ESt16initializer_listIS0_ERKS1_
+00000000000193ea  w    F .text	0000000000000012              _ZSt12__niter_baseIPKjET_S2_
+0000000000014c80 g     F .text	000000000000002f              _start
+0000000000068ff8 g     O .bss	0000000000000008              glad_glBindBuffersBase
+0000000000069120 g     O .bss	0000000000000008              glad_glClearBufferSubData
+00000000000695f8 g     O .bss	0000000000000008              glad_glGetBufferSubData
+0000000000000000       F *UND*	0000000000000000              _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@@GLIBCXX_3.4
+0000000000039b00 g     F .text	0000000000000088              glfwGetEGLContext
+0000000000069860 g     O .bss	0000000000000008              glad_glGetTextureLevelParameteriv
+0000000000000000       F *UND*	0000000000000000              _Znwm@@GLIBCXX_3.4
+0000000000069c08 g     O .bss	0000000000000008              glad_glPointParameteri
+00000000000173da  w    F .text	000000000000002a              _ZNSt12_Vector_baseI6VertexSaIS0_EEC2ERKS1_
+000000000006a290 g     O .bss	0000000000000008              glad_glVertexArrayVertexBuffers
+0000000000069f50 g     O .bss	0000000000000008              glad_glTexImage2D
+0000000000000000       F *UND*	0000000000000000              XGetEventData
+0000000000069320 g     O .bss	0000000000000008              glad_glDeleteProgram
+0000000000023c40 g     F .text	0000000000000048              glfwGetTimerValue
+0000000000000000       F *UND*	0000000000000000              regfree@@GLIBC_2.2.5
+0000000000069b68 g     O .bss	0000000000000008              glad_glNamedFramebufferDrawBuffer
+0000000000069068 g     O .bss	0000000000000008              glad_glBindTransformFeedback
+000000000006a4f0 g     O .bss	0000000000000008              glad_glVertexAttribP3ui
+0000000000069bc8 g     O .bss	0000000000000008              glad_glObjectPtrLabel
+00000000000307d0 g     F .text	000000000000009f              _glfwPlatformSetWindowSize
+00000000000245f0 g     F .text	0000000000000084              _glfwSplitBPP
+0000000000069dd8 g     O .bss	0000000000000008              glad_glProgramUniformMatrix4x3dv
+0000000000000000       F *UND*	0000000000000000              _ZdlPvm@@CXXABI_1.3.9
+000000000001f2d0 g     F .text	0000000000000093              _glfw_fminf
+0000000000069858 g     O .bss	0000000000000008              glad_glGetTextureLevelParameterfv
+00000000000274c0 g     F .text	0000000000000097              glfwSetWindowPos
+00000000000173da  w    F .text	000000000000002a              _ZNSt12_Vector_baseI6VertexSaIS0_EEC1ERKS1_
+000000000001fc00 g     F .text	0000000000000020              glfwTerminate
+00000000000692a0 g     O .bss	0000000000000008              glad_glCreateProgram
+000000000006a2e0 g     O .bss	0000000000000008              glad_glVertexAttrib2fv
+0000000000022490 g     F .text	00000000000000e3              glfwGetJoystickUserPointer
+000000000001631e  w    F .text	0000000000000048              _ZNSt6vectorI6VertexSaIS0_EED2Ev
+0000000000069dc8 g     O .bss	0000000000000008              glad_glProgramUniformMatrix4x2dv
+0000000000069828 g     O .bss	0000000000000008              glad_glGetTexLevelParameteriv
+000000000006a1c8 g     O .bss	0000000000000008              glad_glUniformMatrix3fv
+000000000006a310 g     O .bss	0000000000000008              glad_glVertexAttrib3fv
+000000000006a1d0 g     O .bss	0000000000000008              glad_glUniformMatrix3x2dv
+0000000000068f94 g     O .bss	0000000000000004              GLAD_GL_VERSION_4_5
+000000000006a2f8 g     O .bss	0000000000000008              glad_glVertexAttrib3d
+0000000000068fd0 g     O .bss	0000000000000008              glad_glBeginTransformFeedback
+0000000000021080 g     F .text	000000000000017c              glfwSetCursorPos
+0000000000069950 g     O .bss	0000000000000008              glad_glGetnConvolutionFilter
+0000000000069440 g     O .bss	0000000000000008              glad_glDrawRangeElements
+0000000000000000       F *UND*	0000000000000000              XCloseIM
+0000000000000000       F *UND*	0000000000000000              _ZNSolsEPFRSoS_E@@GLIBCXX_3.4
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_@@GLIBCXX_3.4.21
+0000000000069f58 g     O .bss	0000000000000008              glad_glTexImage2DMultisample
+000000000006a198 g     O .bss	0000000000000008              glad_glUniformMatrix2fv
+000000000001fd20 g     F .text	000000000000000b              glfwGetVersionString
+0000000000069730 g     O .bss	0000000000000008              glad_glGetProgramResourceLocationIndex
+000000000006a460 g     O .bss	0000000000000008              glad_glVertexAttribI4uiv
+0000000000016126  w    F .text	000000000000001f              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderD2Ev
+0000000000028e90 g     F .text	00000000000000ac              glfwSetWindowIconifyCallback
+0000000000000000       F *UND*	0000000000000000              XFreeCursor
+0000000000069ea0 g     O .bss	0000000000000008              glad_glSecondaryColorP3uiv
+0000000000068f8c g     O .bss	0000000000000004              GLAD_GL_VERSION_4_3
+00000000000199ed g     F .text	0000000000000035              gladLoadGL
+00000000000692f8 g     O .bss	0000000000000008              glad_glDebugMessageCallback
+000000000006a080 g     O .bss	0000000000000008              glad_glTransformFeedbackVaryings
+00000000000160b8  w    F .text	000000000000006d              _ZN9__gnu_cxx11char_traitsIcE6lengthEPKc
+0000000000069ed0 g     O .bss	0000000000000008              glad_glStencilFuncSeparate
+00000000000287f0 g     F .text	0000000000000086              glfwGetWindowMonitor
+0000000000000000       F *UND*	0000000000000000              XSetSelectionOwner
+0000000000000000       F *UND*	0000000000000000              _ZNSaIcED1Ev@@GLIBCXX_3.4
+0000000000069b88 g     O .bss	0000000000000008              glad_glNamedFramebufferRenderbuffer
+000000000006a260 g     O .bss	0000000000000008              glad_glVertexArrayAttribFormat
+00000000000176c8  w    F .text	000000000000003a              _ZNKSt16initializer_listIjE3endEv
+0000000000017466  w    F .text	0000000000000015              _ZNKSt16initializer_listI6VertexE5beginEv
+0000000000028c80 g     F .text	00000000000000ac              glfwSetWindowCloseCallback
+0000000000069820 g     O .bss	0000000000000008              glad_glGetTexLevelParameterfv
+0000000000028020 g     F .text	00000000000000a2              glfwShowWindow
+00000000000692e8 g     O .bss	0000000000000008              glad_glCreateVertexArrays
+0000000000069478 g     O .bss	0000000000000008              glad_glEnableVertexArrayAttrib
+0000000000069c30 g     O .bss	0000000000000008              glad_glPolygonOffsetClamp
+000000000006a138 g     O .bss	0000000000000008              glad_glUniform3ui
+0000000000069ed8 g     O .bss	0000000000000008              glad_glStencilMask
+0000000000000000       F *UND*	0000000000000000              _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEcvSt17basic_string_viewIcS2_EEv@@GLIBCXX_3.4.26
+0000000000000000       F *UND*	0000000000000000              _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv@@GLIBCXX_3.4.21
+0000000000069640 g     O .bss	0000000000000008              glad_glGetFloatv
+000000000001f110 g     F .text	0000000000000082              glfwSwapInterval
+0000000000039aa0 g     F .text	0000000000000051              glfwGetEGLDisplay
+00000000000690a0 g     O .bss	0000000000000008              glad_glBlendEquationSeparatei
+00000000000696d8 g     O .bss	0000000000000008              glad_glGetNamedRenderbufferParameteriv
+0000000000069d70 g     O .bss	0000000000000008              glad_glProgramUniformMatrix2x3fv
+000000000001845f  w    F .text	0000000000000035              _ZSt22__uninitialized_copy_aIPKjPjjET0_T_S4_S3_RSaIT1_E
+0000000000068f68 g     O .bss	0000000000000004              GLAD_GL_VERSION_2_0
+00000000000698b8 g     O .bss	0000000000000008              glad_glGetUniformIndices
+0000000000069b10 g     O .bss	0000000000000008              glad_glMultiTexCoordP1ui
+00000000000690f0 g     O .bss	0000000000000008              glad_glBufferSubData
+000000000006a1f0 g     O .bss	0000000000000008              glad_glUniformMatrix4dv
+0000000000069260 g     O .bss	0000000000000008              glad_glCopyTexSubImage1D
+0000000000069618 g     O .bss	0000000000000008              glad_glGetDebugMessageLog
+0000000000021510 g     F .text	0000000000000093              glfwSetCursor
+0000000000069630 g     O .bss	0000000000000008              glad_glGetError
+0000000000000000       F *UND*	0000000000000000              _ZN14EngineGraphics11printErrorsESt17basic_string_viewIcSt11char_traitsIcEES3_i
+0000000000069740 g     O .bss	0000000000000008              glad_glGetProgramResourceiv
+0000000000018571  w    F .text	0000000000000035              _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS2_SaIS2_EEEEPS2_ET0_T_SB_SA_
+0000000000018550  w    F .text	0000000000000021              _ZN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS1_SaIS1_EEEC1ERKS3_
+0000000000000000       F *UND*	0000000000000000              XSupportsLocale
+000000000006a1a8 g     O .bss	0000000000000008              glad_glUniformMatrix2x3fv
+0000000000018684  w    F .text	0000000000000078              _ZN3glm3vecILi4EfLNS_9qualifierE0EEpLIfEERS2_RKNS0_ILi4ET_LS1_0EEE
+000000000006a320 g     O .bss	0000000000000008              glad_glVertexAttrib3sv
+00000000000186fc  w    F .text	000000000000007e              _ZN3glm3vecILi4EfLNS_9qualifierE0EEixEi
+0000000000069c98 g     O .bss	0000000000000008              glad_glProgramUniform2d
+00000000000167b4  w    F .text	0000000000000047              _ZN3glm3vecILi3EfLNS_9qualifierE0EEC1IdddEET_T0_T1_
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_@@GLIBCXX_3.4.21
+0000000000000000       F *UND*	0000000000000000              XEventsQueued
+0000000000024a20 g     F .text	00000000000000b3              glfwGetMonitorContentScale
+0000000000024e80 g     F .text	0000000000000243              glfwSetGamma
+00000000000693a8 g     O .bss	0000000000000008              glad_glDisable
+0000000000069930 g     O .bss	0000000000000008              glad_glGetVertexAttribfv
+0000000000069ba8 g     O .bss	0000000000000008              glad_glNamedRenderbufferStorageMultisample
+000000000006a5a8 g     O .bss	0000000000021078              _glfw
+0000000000000000       F *UND*	0000000000000000              __stack_chk_fail@@GLIBC_2.4
+0000000000000000       F *UND*	0000000000000000              XMapWindow
+00000000000698a8 g     O .bss	0000000000000008              glad_glGetTransformFeedbackiv
+0000000000024c80 g     F .text	0000000000000070              glfwSetMonitorCallback
+0000000000027400 g     F .text	00000000000000b1              glfwGetWindowPos
+000000000006a1b8 g     O .bss	0000000000000008              glad_glUniformMatrix2x4fv
+0000000000069160 g     O .bss	0000000000000008              glad_glClearNamedBufferData
+00000000000696a8 g     O .bss	0000000000000008              glad_glGetNamedBufferParameteri64v
+0000000000000000       F *UND*	0000000000000000              XQueryPointer
+0000000000000000       F *UND*	0000000000000000              XRaiseWindow
+0000000000069c40 g     O .bss	0000000000000008              glad_glPrimitiveRestartIndex
+000000000006a478 g     O .bss	0000000000000008              glad_glVertexAttribIPointer
+00000000000177fe  w    F .text	000000000000002e              _ZSt8_DestroyIPjjEvT_S1_RSaIT0_E
+00000000000190dc  w    F .text	0000000000000012              _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS2_SaIS2_EEEEET_S9_
+00000000000189dc  w    F .text	0000000000000069              _ZNSt6vectorI6VertexSaIS0_EE11_S_max_sizeERKS1_
+0000000000035e00 g     F .text	0000000000000057              _glfwPlatformSetTls
+00000000000212f0 g     F .text	00000000000000f8              glfwDestroyCursor
+0000000000068d18 g     O .data	0000000000000000              .hidden __TMC_END__
+000000000006a380 g     O .bss	0000000000000008              glad_glVertexAttrib4fv
+0000000000069040 g     O .bss	0000000000000008              glad_glBindSampler
+00000000000174f8  w    F .text	00000000000000be              _ZNSt6vectorI6VertexSaIS0_EE19_M_range_initializeIPKS0_EEvT_S6_St20forward_iterator_tag
+000000000006a120 g     O .bss	0000000000000008              glad_glUniform3fv
+00000000000695c8 g     O .bss	0000000000000008              glad_glGetAttribLocation
+0000000000068f3c g     O .bss	0000000000000004              _ZN7Display6heightE
+000000000001f270 g     F .text	0000000000000052              _glfw_strdup
+000000000006a200 g     O .bss	0000000000000008              glad_glUniformMatrix4x2dv
+000000000006a0e0 g     O .bss	0000000000000008              glad_glUniform2fv
+0000000000000000       F *UND*	0000000000000000              regcomp@@GLIBC_2.2.5
+0000000000023a00 g     F .text	000000000000004c              glfwGetClipboardString
+000000000001f850 g     F .text	0000000000000195              glfwInit
+00000000000690b8 g     O .bss	0000000000000008              glad_glBlendFuncSeparate
+0000000000069da8 g     O .bss	0000000000000008              glad_glProgramUniformMatrix3x4dv
+000000000001622a  w    F .text	000000000000001f              _ZNSaI6VertexEC1Ev
+0000000000069f80 g     O .bss	0000000000000008              glad_glTexParameterf
+0000000000027c80 g     F .text	000000000000008e              glfwGetWindowOpacity
+0000000000069938 g     O .bss	0000000000000008              glad_glGetVertexAttribiv
+000000000006a0b0 g     O .bss	0000000000000008              glad_glUniform1iv
+0000000000000000       F *UND*	0000000000000000              pthread_mutex_destroy@@GLIBC_2.2.5
+000000000006a528 g     O .bss	0000000000000008              glad_glVertexP2uiv
+000000000001f400 g     F .text	000000000000044d              _glfwInputError
+00000000000698e0 g     O .bss	0000000000000008              glad_glGetUniformiv
+0000000000069128 g     O .bss	0000000000000008              glad_glClearBufferfi
+00000000000696e0 g     O .bss	0000000000000008              glad_glGetObjectLabel
+000000000006a1a0 g     O .bss	0000000000000008              glad_glUniformMatrix2x3dv
+000000000006a0a8 g     O .bss	0000000000000008              glad_glUniform1i
+0000000000027620 g     F .text	00000000000000f3              glfwSetWindowSize
+00000000000260f0 g     F .text	0000000000000044              _glfwInputFramebufferSize
+000000000001ff60 g     F .text	00000000000000bc              _glfwInputChar
+0000000000069718 g     O .bss	0000000000000008              glad_glGetProgramPipelineiv
+0000000000069c10 g     O .bss	0000000000000008              glad_glPointParameteriv
+0000000000000000       F *UND*	0000000000000000              free@@GLIBC_2.2.5
+0000000000020c30 g     F .text	00000000000000b1              glfwGetKeyName
+0000000000069770 g     O .bss	0000000000000008              glad_glGetQueryBufferObjectuiv
+000000000006a338 g     O .bss	0000000000000008              glad_glVertexAttrib4Nsv
+0000000000069620 g     O .bss	0000000000000008              glad_glGetDoublei_v
+00000000000271e0 g     F .text	000000000000007b              glfwSetWindowShouldClose
+0000000000068f78 g     O .bss	0000000000000004              GLAD_GL_VERSION_3_2
+000000000006a388 g     O .bss	0000000000000008              glad_glVertexAttrib4iv
+0000000000069510 g     O .bss	0000000000000008              glad_glFrontFace
+000000000001653e  w    F .text	000000000000011f              _ZNSt6vectorI6VertexSaIS0_EEC2ERKS2_
+0000000000069b70 g     O .bss	0000000000000008              glad_glNamedFramebufferDrawBuffers
+00000000000691e0 g     O .bss	0000000000000008              glad_glColorP4uiv
+0000000000017a39  w    F .text	0000000000000050              _ZN9__gnu_cxx14__alloc_traitsISaIjEjE17_S_select_on_copyERKS1_
+0000000000068f60 g     O .bss	0000000000000004              GLAD_GL_VERSION_1_4
+0000000000000000       F *UND*	0000000000000000              getenv@@GLIBC_2.2.5
+000000000006a180 g     O .bss	0000000000000008              glad_glUniform4uiv
+0000000000031f60 g     F .text	000000000000006c              _glfwPlatformSetRawMouseMotion
+0000000000069fc8 g     O .bss	0000000000000008              glad_glTexSubImage1D
+0000000000026140 g     F .text	000000000000004c              _glfwInputWindowContentScale
+0000000000069710 g     O .bss	0000000000000008              glad_glGetProgramPipelineInfoLog
+0000000000000000       F *UND*	0000000000000000              regexec@@GLIBC_2.3.4
+0000000000069d10 g     O .bss	0000000000000008              glad_glProgramUniform3uiv
+0000000000069f70 g     O .bss	0000000000000008              glad_glTexParameterIiv
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@@GLIBCXX_3.4.21
+00000000000317f0 g     F .text	000000000000012b              _glfwPlatformWindowMaximized
+0000000000069d28 g     O .bss	0000000000000008              glad_glProgramUniform4f
+0000000000021b30 g     F .text	0000000000000118              glfwJoystickPresent
+0000000000028de0 g     F .text	00000000000000ac              glfwSetWindowFocusCallback
+0000000000000000       F *UND*	0000000000000000              atof@@GLIBC_2.2.5
+0000000000020340 g     F .text	00000000000000e0              _glfwInputJoystickHat
+0000000000000000       F *UND*	0000000000000000              _ZNK14EngineGraphics6Shader10setUniformESt17basic_string_viewIcSt11char_traitsIcEEN3glm3matILi4ELi4EfLNS5_9qualifierE0EEE
+0000000000069588 g     O .bss	0000000000000008              glad_glGetActiveSubroutineUniformName
+000000000006a178 g     O .bss	0000000000000008              glad_glUniform4ui
+0000000000069290 g     O .bss	0000000000000008              glad_glCreateBuffers
+000000000006a1b0 g     O .bss	0000000000000008              glad_glUniformMatrix2x4dv
+000000000006a090 g     O .bss	0000000000000008              glad_glUniform1dv
+000000000003bb40 g     F .text	000000000000000a              _glfwPlatformUpdateGamepadGUID
+0000000000069308 g     O .bss	0000000000000008              glad_glDebugMessageInsert
+00000000000194a4  w    F .text	0000000000000063              _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIjEEPT_PKS3_S6_S4_
+000000000006a4f8 g     O .bss	0000000000000008              glad_glVertexAttribP3uiv
+0000000000069880 g     O .bss	0000000000000008              glad_glGetTextureParameteriv
+0000000000068fe0 g     O .bss	0000000000000008              glad_glBindBuffer
+0000000000069850 g     O .bss	0000000000000008              glad_glGetTextureImage
+00000000000173aa  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorI6VertexED1Ev
+0000000000069448 g     O .bss	0000000000000008              glad_glDrawRangeElementsBaseVertex
+0000000000069140 g     O .bss	0000000000000008              glad_glClearBufferuiv
+0000000000069900 g     O .bss	0000000000000008              glad_glGetVertexArrayiv
+000000000001677e  w    F .text	0000000000000036              _ZNSt17basic_string_viewIcSt11char_traitsIcEEC2EPKc
+0000000000018abc  w    F .text	000000000000002a              _ZNSaIjEC1ERKS_
+0000000000000000       F *UND*	0000000000000000              XFree
+0000000000069558 g     O .bss	0000000000000008              glad_glGenVertexArrays
+0000000000018bb3  w    F .text	000000000000002e              _ZNSt16allocator_traitsISaIjEE8allocateERS0_m
+0000000000069fe0 g     O .bss	0000000000000008              glad_glTextureBarrier
+00000000000178c6  w    F .text	0000000000000066              _ZNSt12_Vector_baseI6VertexSaIS0_EEC1EmRKS1_
+0000000000030a80 g     F .text	000000000000004b              _glfwPlatformSetWindowAspectRatio
+0000000000068d40 g     O .bss	0000000000000110              _ZSt4cout@@GLIBCXX_3.4
+00000000000698c8 g     O .bss	0000000000000008              glad_glGetUniformSubroutineuiv
+00000000000313d0 g     F .text	0000000000000046              _glfwPlatformHideWindow
+0000000000069508 g     O .bss	0000000000000008              glad_glFramebufferTextureLayer
+00000000000691c8 g     O .bss	0000000000000008              glad_glColorP3ui
+00000000000188f4  w    F .text	000000000000005a              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC2Effff
+0000000000021fa0 g     F .text	0000000000000188              glfwGetJoystickHats
+0000000000069020 g     O .bss	0000000000000008              glad_glBindImageTexture
+0000000000069080 g     O .bss	0000000000000008              glad_glBindVertexBuffers
+0000000000017f76  w    F .text	000000000000007e              _ZNK3glm3vecILi4EfLNS_9qualifierE0EEixEi
+0000000000023210 g     F .text	000000000000013f              glfwJoystickIsGamepad
+0000000000069228 g     O .bss	0000000000000008              glad_glCompressedTextureSubImage2D
+0000000000028880 g     F .text	0000000000000187              glfwSetWindowMonitor
+0000000000069678 g     O .bss	0000000000000008              glad_glGetInteger64v
+000000000006a318 g     O .bss	0000000000000008              glad_glVertexAttrib3s
+0000000000069a50 g     O .bss	0000000000000008              glad_glIsRenderbuffer
+0000000000000000       F *UND*	0000000000000000              XSetLocaleModifiers
+000000000006a488 g     O .bss	0000000000000008              glad_glVertexAttribL1dv
+0000000000069cf8 g     O .bss	0000000000000008              glad_glProgramUniform3i
+0000000000016386  w    F .text	000000000000001f              _ZNSaIjED2Ev
+0000000000069480 g     O .bss	0000000000000008              glad_glEnableVertexAttribArray
+00000000000164a2  w    F .text	000000000000009c              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_
+0000000000030a20 g     F .text	0000000000000052              _glfwPlatformSetWindowSizeLimits
+0000000000017606  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorIjED1Ev
+00000000000225f0 g     F .text	0000000000000311              glfwUpdateGamepadMappings
+0000000000068f88 g     O .bss	0000000000000004              GLAD_GL_VERSION_4_2
+0000000000069a80 g     O .bss	0000000000000008              glad_glIsVertexArray
+000000000006a108 g     O .bss	0000000000000008              glad_glUniform3d
+00000000000320f0 g     F .text	0000000000000013              _glfwPlatformRawMouseMotionSupported
+00000000000240f0 g     F .text	000000000000005e              _glfwAllocMonitor
+0000000000026190 g     F .text	0000000000000038              _glfwInputWindowDamage
+000000000006a498 g     O .bss	0000000000000008              glad_glVertexAttribL2dv
+0000000000018148  w    F .text	0000000000000039              _ZNSt12_Vector_baseI6VertexSaIS0_EE13_M_deallocateEPS0_m
+0000000000069248 g     O .bss	0000000000000008              glad_glCopyNamedBufferSubData
+0000000000069ec0 g     O .bss	0000000000000008              glad_glSpecializeShader
+0000000000000000       F *UND*	0000000000000000              malloc@@GLIBC_2.2.5
+000000000001938d  w    F .text	0000000000000035              _ZSt13__copy_move_aILb0EPKjPjET1_T0_S4_S3_
+0000000000069c80 g     O .bss	0000000000000008              glad_glProgramUniform1iv
+000000000006a440 g     O .bss	0000000000000008              glad_glVertexAttribI4iv
+0000000000025700 g     F .text	0000000000000320              _glfwGetVulkanResultString
+0000000000000000       F *UND*	0000000000000000              XCheckTypedWindowEvent
+0000000000069a40 g     O .bss	0000000000000008              glad_glIsProgramPipeline
+00000000000175c8  w    F .text	000000000000002e              _ZSt8_DestroyIP6VertexS0_EvT_S2_RSaIT0_E
+000000000001f060 g     F .text	00000000000000a8              glfwSwapBuffers
+0000000000069748 g     O .bss	0000000000000008              glad_glGetProgramStageiv
+0000000000069908 g     O .bss	0000000000000008              glad_glGetVertexAttribIiv
+0000000000024720 g     F .text	0000000000000075              glfwGetPrimaryMonitor
+000000000006a3c8 g     O .bss	0000000000000008              glad_glVertexAttribFormat
+0000000000028a90 g     F .text	0000000000000086              glfwGetWindowUserPointer
+00000000000247a0 g     F .text	00000000000000b1              glfwGetMonitorPos
+000000000006a228 g     O .bss	0000000000000008              glad_glUnmapBuffer
+000000000001626a  w    F .text	00000000000000b3              _ZNSt6vectorI6VertexSaIS0_EEC2ESt16initializer_listIS0_ERKS1_
+000000000001677e  w    F .text	0000000000000036              _ZNSt17basic_string_viewIcSt11char_traitsIcEEC1EPKc
+0000000000069350 g     O .bss	0000000000000008              glad_glDeleteSync
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEPKc@@GLIBCXX_3.4.21
+0000000000018978  w    F .text	0000000000000032              _ZNSt12_Vector_baseI6VertexSaIS0_EE17_Vector_impl_dataC2Ev
+0000000000033a20 g     F .text	0000000000000048              _glfwPlatformWaitEvents
+0000000000035f50 g     F .text	0000000000000055              _glfwPlatformLockMutex
+0000000000069e70 g     O .bss	0000000000000008              glad_glSamplerParameteriv
+0000000000000000       F *UND*	0000000000000000              pthread_key_delete@@GLIBC_2.2.5
+00000000000260b0 g     F .text	000000000000003e              _glfwInputWindowMaximize
+00000000000694c0 g     O .bss	0000000000000008              glad_glFlush
+0000000000069470 g     O .bss	0000000000000008              glad_glEnable
+0000000000020220 g     F .text	0000000000000046              _glfwInputDrop
+00000000000185d4  w    F .text	000000000000005a              _ZNSt12_Vector_baseIjSaIjEE17_M_create_storageEm
+0000000000035bd0 g     F .text	0000000000000062              _glfwInitTimerPOSIX
+000000000001ef30 g     F .text	00000000000000c2              _glfwStringInExtensionString
+000000000001894e  w    F .text	000000000000002a              _ZNSaI6VertexEC1ERKS0_
+00000000000278b0 g     F .text	0000000000000160              glfwSetWindowAspectRatio
+000000000006a448 g     O .bss	0000000000000008              glad_glVertexAttribI4sv
+0000000000069920 g     O .bss	0000000000000008              glad_glGetVertexAttribPointerv
+0000000000068000 g       .data	0000000000000000              __data_start
+0000000000039ef0 g     F .text	0000000000000040              _glfwTerminateOSMesa
+000000000006a148 g     O .bss	0000000000000008              glad_glUniform4d
+0000000000000000       F *UND*	0000000000000000              XOpenDisplay
+0000000000069e40 g     O .bss	0000000000000008              glad_glSampleMaski
+000000000002ccd0 g     F .text	000000000000059d              _glfwPollMonitorsX11
+0000000000069ab8 g     O .bss	0000000000000008              glad_glMapNamedBufferRange
+0000000000069568 g     O .bss	0000000000000008              glad_glGenerateTextureMipmap
+0000000000027ad0 g     F .text	00000000000000eb              glfwGetWindowFrameSize
+000000000008ba38 g       .bss	0000000000000000              _end
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev@@GLIBCXX_3.4.21
+0000000000069650 g     O .bss	0000000000000008              glad_glGetFragDataLocation
+0000000000069a58 g     O .bss	0000000000000008              glad_glIsSampler
+0000000000016ab9  w    F .text	000000000000000f              _ZN3glm3matILi4ELi4EfLNS_9qualifierE0EE6lengthEv
+0000000000069808 g     O .bss	0000000000000008              glad_glGetSubroutineUniformLocation
+0000000000030140 g     F .text	0000000000000177              _glfwPlatformSetWindowTitle
+0000000000069270 g     O .bss	0000000000000008              glad_glCopyTexSubImage3D
+0000000000069f00 g     O .bss	0000000000000008              glad_glTexBufferRange
+00000000000695e8 g     O .bss	0000000000000008              glad_glGetBufferParameteriv
+000000000001900c  w    F .text	0000000000000018              _ZNK9__gnu_cxx13new_allocatorI6VertexE8max_sizeEv
+0000000000069688 g     O .bss	0000000000000008              glad_glGetIntegerv
+00000000000281e0 g     F .text	0000000000000077              glfwFocusWindow
+0000000000018e9c  w    F .text	0000000000000013              _ZN9__gnu_cxx13new_allocatorIjEC2ERKS1_
+0000000000000000       F *UND*	0000000000000000              pthread_getspecific@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              strcmp@@GLIBC_2.2.5
+000000000006a298 g     O .bss	0000000000000008              glad_glVertexAttrib1d
+0000000000039c70 g     F .text	0000000000000275              _glfwInitOSMesa
+0000000000000000       F *UND*	0000000000000000              strtol@@GLIBC_2.2.5
+0000000000069600 g     O .bss	0000000000000008              glad_glGetCompressedTexImage
+0000000000069258 g     O .bss	0000000000000008              glad_glCopyTexImage2D
+0000000000000000       F *UND*	0000000000000000              ioctl@@GLIBC_2.2.5
+0000000000015f3c  w    F .text	0000000000000054              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC1IiifiEET_T0_T1_T2_
+0000000000069988 g     O .bss	0000000000000008              glad_glGetnPixelMapuiv
+0000000000069348 g     O .bss	0000000000000008              glad_glDeleteShader
+000000000006a368 g     O .bss	0000000000000008              glad_glVertexAttrib4d
+0000000000068fe8 g     O .bss	0000000000000008              glad_glBindBufferBase
+00000000000692d8 g     O .bss	0000000000000008              glad_glCreateTextures
+0000000000069c68 g     O .bss	0000000000000008              glad_glProgramUniform1f
+0000000000069030 g     O .bss	0000000000000008              glad_glBindProgramPipeline
+0000000000069300 g     O .bss	0000000000000008              glad_glDebugMessageControl
+0000000000034f60 g     F .text	000000000000005a              glfwGetX11Window
+0000000000069f38 g     O .bss	0000000000000008              glad_glTexCoordP4ui
+000000000006a1e0 g     O .bss	0000000000000008              glad_glUniformMatrix3x4dv
+00000000000696c8 g     O .bss	0000000000000008              glad_glGetNamedFramebufferAttachmentParameteriv
+00000000000694a0 g     O .bss	0000000000000008              glad_glEndQueryIndexed
+0000000000018d6a  w    F .text	000000000000000e              _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_
+0000000000017864  w    F .text	0000000000000050              _ZN9__gnu_cxx14__alloc_traitsISaI6VertexES1_E17_S_select_on_copyERKS2_
+000000000006a098 g     O .bss	0000000000000008              glad_glUniform1f
+00000000000693c8 g     O .bss	0000000000000008              glad_glDispatchCompute
+0000000000069370 g     O .bss	0000000000000008              glad_glDepthFunc
+0000000000069f18 g     O .bss	0000000000000008              glad_glTexCoordP2ui
+0000000000069b48 g     O .bss	0000000000000008              glad_glMultiTexCoordP4uiv
+0000000000000000       F *UND*	0000000000000000              XNextEvent
+0000000000069798 g     O .bss	0000000000000008              glad_glGetQueryObjectuiv
+0000000000069058 g     O .bss	0000000000000008              glad_glBindTextureUnit
+0000000000069a68 g     O .bss	0000000000000008              glad_glIsSync
+00000000000176b2  w    F .text	0000000000000015              _ZNKSt16initializer_listIjE5beginEv
+0000000000069338 g     O .bss	0000000000000008              glad_glDeleteRenderbuffers
+000000000006a560 g     O .bss	0000000000000008              glad_glViewportIndexedf
+0000000000000000       F *UND*	0000000000000000              XGetErrorText
+0000000000000000       F *UND*	0000000000000000              read@@GLIBC_2.2.5
+0000000000068f64 g     O .bss	0000000000000004              GLAD_GL_VERSION_1_5
+0000000000069610 g     O .bss	0000000000000008              glad_glGetCompressedTextureSubImage
+00000000000179dc  w    F .text	0000000000000035              _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS2_SaIS2_EEEEPS2_S2_ET0_T_SB_SA_RSaIT1_E
+0000000000020310 g     F .text	0000000000000022              _glfwInputJoystickButton
+000000000006a1c0 g     O .bss	0000000000000008              glad_glUniformMatrix3dv
+0000000000069be0 g     O .bss	0000000000000008              glad_glPauseTransformFeedback
+00000000000172d4  w    F .text	000000000000004b              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC2Ef
+0000000000069410 g     O .bss	0000000000000008              glad_glDrawElementsBaseVertex
+00000000000293c0 g     F .text	0000000000000062              _glfwInputErrorX11
+0000000000000000       F *UND*	0000000000000000              tanf@@GLIBC_2.2.5
+0000000000017636  w    F .text	000000000000002a              _ZNSt12_Vector_baseIjSaIjEEC1ERKS0_
+00000000000698e8 g     O .bss	0000000000000008              glad_glGetUniformuiv
+0000000000023da0 g     F .text	00000000000002ac              _glfwInputMonitor
+0000000000034f00 g     F .text	0000000000000051              glfwGetX11Display
+000000000006a028 g     O .bss	0000000000000008              glad_glTextureStorage1D
+0000000000019492  w    F .text	0000000000000012              _ZNK9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEE4baseEv
+0000000000000000       F *UND*	0000000000000000              __cxa_rethrow@@CXXABI_1.3
+0000000000000000       F *UND*	0000000000000000              getpid@@GLIBC_2.2.5
+0000000000069a48 g     O .bss	0000000000000008              glad_glIsQuery
+00000000000696b8 g     O .bss	0000000000000008              glad_glGetNamedBufferPointerv
+0000000000017bb2  w    F .text	0000000000000035              _ZSt22__uninitialized_copy_aIN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEEPjjET0_T_SA_S9_RSaIT1_E
+0000000000000000       F *UND*	0000000000000000              dlopen@@GLIBC_2.2.5
+0000000000029330 g     F .text	0000000000000023              _glfwGrabErrorHandlerX11
+0000000000000000       F *UND*	0000000000000000              XResizeWindow
+0000000000069b50 g     O .bss	0000000000000008              glad_glNamedBufferData
+0000000000000000       F *UND*	0000000000000000              pthread_mutex_lock@@GLIBC_2.2.5
+00000000000694b8 g     O .bss	0000000000000008              glad_glFinish
+0000000000069528 g     O .bss	0000000000000008              glad_glGenProgramPipelines
+00000000000695f0 g     O .bss	0000000000000008              glad_glGetBufferPointerv
+0000000000017c48  w    F .text	0000000000000068              _ZNK3glm3vecILi3EfLNS_9qualifierE0EEixEi
+0000000000028ff0 g     F .text	00000000000000ac              glfwSetFramebufferSizeCallback
+0000000000000000       F *UND*	0000000000000000              XkbSelectEventDetails
+000000000006a540 g     O .bss	0000000000000008              glad_glVertexP4ui
+000000000006a480 g     O .bss	0000000000000008              glad_glVertexAttribL1d
+000000000006a190 g     O .bss	0000000000000008              glad_glUniformMatrix2dv
+000000000006a058 g     O .bss	0000000000000008              glad_glTextureSubImage2D
+0000000000021de0 g     F .text	00000000000001b7              glfwGetJoystickButtons
+000000000006a2d0 g     O .bss	0000000000000008              glad_glVertexAttrib2dv
+00000000000189aa  w    F .text	0000000000000032              _ZNSt16allocator_traitsISaI6VertexEE10deallocateERS1_PS0_m
+0000000000000000       F *UND*	0000000000000000              XUnmapWindow
+00000000000697a8 g     O .bss	0000000000000008              glad_glGetRenderbufferParameteriv
+0000000000000000       F *UND*	0000000000000000              pthread_mutex_init@@GLIBC_2.2.5
+0000000000069728 g     O .bss	0000000000000008              glad_glGetProgramResourceLocation
+0000000000000000       F *UND*	0000000000000000              XWarpPointer
+0000000000031190 g     F .text	000000000000023a              _glfwPlatformMaximizeWindow
+0000000000000000       F *UND*	0000000000000000              XAllocClassHint
+00000000000314a0 g     F .text	00000000000000d0              _glfwPlatformFocusWindow
+0000000000069628 g     O .bss	0000000000000008              glad_glGetDoublev
+0000000000000000       F *UND*	0000000000000000              opendir@@GLIBC_2.2.5
+0000000000018f6c  w    F .text	0000000000000050              _ZSt4copyIN9__gnu_cxx17__normal_iteratorIPK6VertexSt6vectorIS2_SaIS2_EEEEPS2_ET0_T_SB_SA_
+0000000000069bf0 g     O .bss	0000000000000008              glad_glPixelStorei
+00000000000693b8 g     O .bss	0000000000000008              glad_glDisableVertexAttribArray
+000000000006a300 g     O .bss	0000000000000008              glad_glVertexAttrib3dv
+0000000000069e18 g     O .bss	0000000000000008              glad_glReleaseShaderCompiler
+0000000000068d14 g       .bss	0000000000000000              __bss_start
+0000000000025fd0 g     F .text	0000000000000044              _glfwInputWindowPos
+0000000000069208 g     O .bss	0000000000000008              glad_glCompressedTexSubImage1D
+0000000000069b20 g     O .bss	0000000000000008              glad_glMultiTexCoordP2ui
+0000000000018978  w    F .text	0000000000000032              _ZNSt12_Vector_baseI6VertexSaIS0_EE17_Vector_impl_dataC1Ev
+0000000000069200 g     O .bss	0000000000000008              glad_glCompressedTexImage3D
+0000000000035ab0 g     F .text	000000000000011a              _glfwKeySym2Unicode
+000000000002e6c0 g     F .text	000000000000009b              _glfwGetWindowPropertyX11
+0000000000023350 g     F .text	0000000000000157              glfwGetGamepadName
+00000000000697e0 g     O .bss	0000000000000008              glad_glGetShaderSource
+0000000000069e48 g     O .bss	0000000000000008              glad_glSamplerParameterIiv
+0000000000028260 g     F .text	00000000000003b7              glfwGetWindowAttrib
+0000000000000000       F *UND*	0000000000000000              XDeleteContext
+000000000001fcc0 g     F .text	0000000000000051              glfwGetVersion
+0000000000018428  w    F .text	0000000000000037              _ZNSt12_Vector_baseIjSaIjEE11_M_allocateEm
+00000000000698c0 g     O .bss	0000000000000008              glad_glGetUniformLocation
+0000000000000000       F *UND*	0000000000000000              readdir@@GLIBC_2.2.5
+0000000000034a20 g     F .text	00000000000000c4              _glfwPlatformGetRequiredInstanceExtensions
+0000000000000000       F *UND*	0000000000000000              _ZNSt8ios_base4InitC1Ev@@GLIBCXX_3.4
+00000000000208b0 g     F .text	0000000000000321              glfwSetInputMode
+0000000000069408 g     O .bss	0000000000000008              glad_glDrawElements
+00000000000213f0 g     F .text	000000000000011c              glfwCreateStandardCursor
+0000000000000000       F *UND*	0000000000000000              XFlush
+0000000000025d40 g     F .text	0000000000000188              glfwCreateWindowSurface
+000000000006a518 g     O .bss	0000000000000008              glad_glVertexBindingDivisor
+0000000000069e20 g     O .bss	0000000000000008              glad_glRenderbufferStorage
+0000000000068f84 g     O .bss	0000000000000004              GLAD_GL_VERSION_4_1
+0000000000000000       F *UND*	0000000000000000              _ZN14EngineGraphics4MeshC1ESt6vectorI6VertexSaIS2_EES1_IjSaIjEE
+00000000000691b0 g     O .bss	0000000000000008              glad_glClipControl
+00000000000695a0 g     O .bss	0000000000000008              glad_glGetActiveUniformBlockName
+0000000000069948 g     O .bss	0000000000000008              glad_glGetnCompressedTexImage
+0000000000018360  w    F .text	0000000000000016              _ZNKSt16initializer_listIjE4sizeEv
+0000000000069e38 g     O .bss	0000000000000008              glad_glSampleCoverage
+0000000000000000       F *UND*	0000000000000000              XCreateWindow
+0000000000026240 g     F .text	0000000000000455              glfwCreateWindow
+00000000000699e0 g     O .bss	0000000000000008              glad_glInvalidateBufferSubData
+000000000003bb50 g     F .text	0000000000000065              __libc_csu_init
+0000000000069888 g     O .bss	0000000000000008              glad_glGetTextureSubImage
+00000000000695c0 g     O .bss	0000000000000008              glad_glGetAttachedShaders
+0000000000000000       F *UND*	0000000000000000              strtok@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              powf@@GLIBC_2.27
+00000000000692b8 g     O .bss	0000000000000008              glad_glCreateRenderbuffers
+0000000000069fa0 g     O .bss	0000000000000008              glad_glTexStorage1D
+0000000000069e68 g     O .bss	0000000000000008              glad_glSamplerParameteri
+0000000000069758 g     O .bss	0000000000000008              glad_glGetQueryBufferObjecti64v
+00000000000306f0 g     F .text	0000000000000054              _glfwPlatformWindowVisible
+0000000000031420 g     F .text	0000000000000079              _glfwPlatformRequestWindowAttention
+0000000000069d00 g     O .bss	0000000000000008              glad_glProgramUniform3iv
+000000000001f000 g     F .text	0000000000000058              glfwGetCurrentContext
+000000000001877a  w    F .text	0000000000000035              _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_
+0000000000018f3b  w    F .text	0000000000000031              _ZNSt20__uninitialized_copyILb1EE13__uninit_copyIPKjPjEET0_T_S6_S5_
+0000000000025b50 g     F .text	00000000000000e0              glfwGetInstanceProcAddress
+0000000000069f10 g     O .bss	0000000000000008              glad_glTexCoordP1uiv
+000000000001864f  w    F .text	0000000000000035              _ZSt18uninitialized_copyIN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEEPjET0_T_SA_S9_
+0000000000069098 g     O .bss	0000000000000008              glad_glBlendEquationSeparate
+0000000000069d80 g     O .bss	0000000000000008              glad_glProgramUniformMatrix2x4fv
+000000000001631e  w    F .text	0000000000000048              _ZNSt6vectorI6VertexSaIS0_EED1Ev
+0000000000000000       F *UND*	0000000000000000              XkbFreeKeyboard
+0000000000017b5a  w    F .text	0000000000000058              _ZNKSt6vectorIjSaIjEE3endEv
+0000000000069530 g     O .bss	0000000000000008              glad_glGenQueries
+0000000000000000       F *UND*	0000000000000000              XDestroyWindow
+0000000000069f30 g     O .bss	0000000000000008              glad_glTexCoordP3uiv
+0000000000069330 g     O .bss	0000000000000008              glad_glDeleteQueries
+0000000000027f10 g     F .text	0000000000000077              glfwRestoreWindow
+00000000000690d8 g     O .bss	0000000000000008              glad_glBlitNamedFramebuffer
+00000000000697a0 g     O .bss	0000000000000008              glad_glGetQueryiv
+0000000000069358 g     O .bss	0000000000000008              glad_glDeleteTextures
+0000000000027a10 g     F .text	00000000000000b1              glfwGetFramebufferSize
+0000000000069f08 g     O .bss	0000000000000008              glad_glTexCoordP1ui
+000000000006a390 g     O .bss	0000000000000008              glad_glVertexAttrib4s
+0000000000017404  w    F .text	0000000000000062              _ZNSt12_Vector_baseI6VertexSaIS0_EED1Ev
+000000000001ed20 g     F .text	000000000000020e              glfwExtensionSupported
+0000000000033a70 g     F .text	000000000000005e              _glfwPlatformWaitEventsTimeout
+0000000000037cc0 g     F .text	0000000000000607              _glfwInitEGL
+0000000000000000       F *UND*	0000000000000000              snprintf@@GLIBC_2.2.5
+0000000000069d30 g     O .bss	0000000000000008              glad_glProgramUniform4fv
+0000000000018b18  w    F .text	0000000000000032              _ZNSt16allocator_traitsISaIjEE10deallocateERS0_Pjm
+0000000000018291  w    F .text	0000000000000035              _ZSt22__uninitialized_copy_aIPK6VertexPS0_S0_ET0_T_S5_S4_RSaIT1_E
+0000000000069f98 g     O .bss	0000000000000008              glad_glTexParameteriv
+0000000000024220 g     F .text	0000000000000207              _glfwChooseVideoMode
+00000000000163a6  w    F .text	00000000000000b3              _ZNSt6vectorIjSaIjEEC2ESt16initializer_listIjERKS0_
+0000000000069818 g     O .bss	0000000000000008              glad_glGetTexImage
+000000000006a250 g     O .bss	0000000000000008              glad_glValidateProgramPipeline
+000000000001645a  w    F .text	0000000000000048              _ZNSt6vectorIjSaIjEED1Ev
+0000000000000000       F *UND*	0000000000000000              closedir@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              XChangeWindowAttributes
+0000000000017660  w    F .text	0000000000000051              _ZNSt12_Vector_baseIjSaIjEED1Ev
+0000000000018eb0  w    F .text	0000000000000026              _ZN9__gnu_cxx13new_allocatorIjE10deallocateEPjm
+0000000000069968 g     O .bss	0000000000000008              glad_glGetnMapfv
+0000000000069cf0 g     O .bss	0000000000000008              glad_glProgramUniform3fv
+00000000000173aa  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorI6VertexED2Ev
+00000000000691f8 g     O .bss	0000000000000008              glad_glCompressedTexImage2D
+00000000000697f8 g     O .bss	0000000000000008              glad_glGetStringi
+0000000000069cd0 g     O .bss	0000000000000008              glad_glProgramUniform2uiv
+0000000000000000       F *UND*	0000000000000000              gettimeofday@@GLIBC_2.2.5
+000000000006a278 g     O .bss	0000000000000008              glad_glVertexArrayBindingDivisor
+0000000000000000       F *UND*	0000000000000000              XTranslateCoordinates
+0000000000069aa0 g     O .bss	0000000000000008              glad_glMapBuffer
+0000000000028bd0 g     F .text	00000000000000ac              glfwSetWindowSizeCallback
+00000000000694c8 g     O .bss	0000000000000008              glad_glFlushMappedBufferRange
+0000000000000000       F *UND*	0000000000000000              XkbGetNames
+0000000000037b50 g     F .text	0000000000000088              glfwGetGLXContext
+0000000000000000       F *UND*	0000000000000000              memmove@@GLIBC_2.2.5
+0000000000034af0 g     F .text	0000000000000196              _glfwPlatformGetPhysicalDevicePresentationSupport
+000000000001739a  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorI6VertexEC2Ev
+0000000000069108 g     O .bss	0000000000000008              glad_glClampColor
+0000000000069288 g     O .bss	0000000000000008              glad_glCopyTextureSubImage3D
+0000000000035090 g     F .text	0000000000000056              glfwGetX11SelectionString
+0000000000069810 g     O .bss	0000000000000008              glad_glGetSynciv
+0000000000000000       F *UND*	0000000000000000              XDeleteProperty
+0000000000000000       F *UND*	0000000000000000              __cxa_end_catch@@CXXABI_1.3
+0000000000000000       F *UND*	0000000000000000              realloc@@GLIBC_2.2.5
+0000000000017702  w    F .text	0000000000000035              _ZSt8distanceIPKjENSt15iterator_traitsIT_E15difference_typeES3_S3_
+0000000000069848 g     O .bss	0000000000000008              glad_glGetTexParameteriv
+000000000002af40 g     F .text	000000000000000d              _glfwPlatformGetVersionString
+000000000006a4d8 g     O .bss	0000000000000008              glad_glVertexAttribP1uiv
+0000000000069fb0 g     O .bss	0000000000000008              glad_glTexStorage2DMultisample
+000000000001862e  w    F .text	0000000000000021              _ZN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEC2ERKS2_
+0000000000000000       F *UND*	0000000000000000              XVisualIDFromVisual
+0000000000018da6  w    F .text	0000000000000026              _ZN9__gnu_cxx13new_allocatorI6VertexE10deallocateEPS1_m
+0000000000026220 g     F .text	000000000000001a              _glfwInputWindowMonitor
+00000000000696f8 g     O .bss	0000000000000008              glad_glGetProgramBinary
+0000000000018112  w    F .text	0000000000000036              _ZNSt12_Vector_baseI6VertexSaIS0_EE12_Vector_implC2ERKS1_
+0000000000000000       F *UND*	0000000000000000              __gxx_personality_v0@@CXXABI_1.3
+000000000006a2b8 g     O .bss	0000000000000008              glad_glVertexAttrib1s
+0000000000069800 g     O .bss	0000000000000008              glad_glGetSubroutineIndex
+000000000006a220 g     O .bss	0000000000000008              glad_glUniformSubroutinesuiv
+0000000000000000       F *UND*	0000000000000000              XSetICFocus
+0000000000021a80 g     F .text	00000000000000ac              glfwSetDropCallback
+0000000000034fc0 g     F .text	00000000000000c1              glfwSetX11SelectionString
+00000000000344c0 g     F .text	000000000000009c              _glfwPlatformSetClipboardString
+000000000006a3e0 g     O .bss	0000000000000008              glad_glVertexAttribI1ui
+00000000000699f0 g     O .bss	0000000000000008              glad_glInvalidateNamedFramebufferData
+0000000000024ae0 g     F .text	0000000000000085              glfwGetMonitorName
+000000000006a078 g     O .bss	0000000000000008              glad_glTransformFeedbackBufferRange
+00000000000694d8 g     O .bss	0000000000000008              glad_glFramebufferParameteri
+00000000000178b4  w    F .text	0000000000000012              _ZNKSt12_Vector_baseI6VertexSaIS0_EE19_M_get_Tp_allocatorEv
+0000000000000000       F *UND*	0000000000000000              XrmGetStringDatabase
+0000000000068f70 g     O .bss	0000000000000004              GLAD_GL_VERSION_3_0
+0000000000025380 g     F .text	0000000000000347              _glfwInitVulkan
+0000000000069450 g     O .bss	0000000000000008              glad_glDrawTransformFeedback
+000000000006a418 g     O .bss	0000000000000008              glad_glVertexAttribI3iv
+00000000000695e0 g     O .bss	0000000000000008              glad_glGetBufferParameteri64v
+0000000000000000       F *UND*	0000000000000000              XGetICValues
+0000000000068e60 g     O .bss	0000000000000040              model
+00000000000223b0 g     F .text	00000000000000d3              glfwSetJoystickUserPointer
+0000000000017ff4  w    F .text	0000000000000055              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_construct_auxIPKcEEvT_S8_St12__false_type
+0000000000069c28 g     O .bss	0000000000000008              glad_glPolygonOffset
+000000000006a270 g     O .bss	0000000000000008              glad_glVertexArrayAttribLFormat
+00000000000694e0 g     O .bss	0000000000000008              glad_glFramebufferRenderbuffer
+0000000000069418 g     O .bss	0000000000000008              glad_glDrawElementsIndirect
+00000000000167fb  w    F .text	0000000000000225              _ZN3glm9translateIfLNS_9qualifierE0EEENS_3matILi4ELi4ET_XT0_EEERKS4_RKNS_3vecILi3ES3_XT0_EEE
+0000000000069bc0 g     O .bss	0000000000000008              glad_glObjectLabel
+0000000000069780 g     O .bss	0000000000000008              glad_glGetQueryObjecti64v
+0000000000069e90 g     O .bss	0000000000000008              glad_glScissorIndexedv
+00000000000164a2  w    F .text	000000000000009c              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_
+0000000000017404  w    F .text	0000000000000062              _ZNSt12_Vector_baseI6VertexSaIS0_EED2Ev
+000000000006a4d0 g     O .bss	0000000000000008              glad_glVertexAttribP1ui
+0000000000068f50 g     O .bss	0000000000000004              GLAD_GL_VERSION_1_0
+0000000000069bb8 g     O .bss	0000000000000008              glad_glNormalP3uiv
+0000000000069b28 g     O .bss	0000000000000008              glad_glMultiTexCoordP2uiv
+0000000000000000       F *UND*	0000000000000000              XOpenIM
+000000000006a3c0 g     O .bss	0000000000000008              glad_glVertexAttribDivisor
+000000000002ee40 g     F .text	00000000000002d1              _glfwPlatformCreateWindow
+0000000000069d18 g     O .bss	0000000000000008              glad_glProgramUniform4d
+0000000000016a40  w    F .text	0000000000000079              _ZN3glm11perspectiveIfEENS_3matILi4ELi4ET_LNS_9qualifierE0EEES2_S2_S2_S2_
+0000000000000000       F *UND*	0000000000000000              XGetInputFocus
+0000000000069660 g     O .bss	0000000000000008              glad_glGetFramebufferParameteriv
+0000000000029300 g     F .text	0000000000000030              glfwPostEmptyEvent
+000000000001e090 g     F .text	0000000000000471              _glfwChooseFBConfig
+0000000000069498 g     O .bss	0000000000000008              glad_glEndQuery
+0000000000069d78 g     O .bss	0000000000000008              glad_glProgramUniformMatrix2x4dv
+0000000000031a40 g     F .text	0000000000000035              _glfwPlatformSetWindowResizable
+000000000006a358 g     O .bss	0000000000000008              glad_glVertexAttrib4Nusv
+0000000000018182  w    F .text	0000000000000016              _ZNKSt16initializer_listI6VertexE4sizeEv
+0000000000000000       F *UND*	0000000000000000              XDefineCursor
+0000000000069ec8 g     O .bss	0000000000000008              glad_glStencilFunc
+00000000000697c8 g     O .bss	0000000000000008              glad_glGetSamplerParameteriv
+0000000000000000       F *UND*	0000000000000000              inotify_init1@@GLIBC_2.9
+0000000000069488 g     O .bss	0000000000000008              glad_glEnablei
+000000000006a3a8 g     O .bss	0000000000000008              glad_glVertexAttrib4uiv
+000000000001894e  w    F .text	000000000000002a              _ZNSaI6VertexEC2ERKS0_
+0000000000069078 g     O .bss	0000000000000008              glad_glBindVertexBuffer
+000000000002e380 g     F .text	00000000000001e1              _glfwPlatformSetGammaRamp
+0000000000069be8 g     O .bss	0000000000000008              glad_glPixelStoref
+0000000000069658 g     O .bss	0000000000000008              glad_glGetFramebufferAttachmentParameteriv
+0000000000069698 g     O .bss	0000000000000008              glad_glGetInternalformativ
+0000000000069b38 g     O .bss	0000000000000008              glad_glMultiTexCoordP3uiv
+0000000000069940 g     O .bss	0000000000000008              glad_glGetnColorTable
+000000000002e760 g     F .text	0000000000000080              _glfwIsVisualTransparentX11
+0000000000000000  w      *UND*	0000000000000000              _ITM_deregisterTMCloneTable
+0000000000069500 g     O .bss	0000000000000008              glad_glFramebufferTexture3D
+00000000000698d8 g     O .bss	0000000000000008              glad_glGetUniformfv
+0000000000069738 g     O .bss	0000000000000008              glad_glGetProgramResourceName
+0000000000069790 g     O .bss	0000000000000008              glad_glGetQueryObjectui64v
+000000000006a2d8 g     O .bss	0000000000000008              glad_glVertexAttrib2f
+0000000000000000       F *UND*	0000000000000000              _Unwind_Resume@@GCC_3.0
+0000000000069e60 g     O .bss	0000000000000008              glad_glSamplerParameterfv
+0000000000069c50 g     O .bss	0000000000000008              glad_glProgramParameteri
+0000000000069af0 g     O .bss	0000000000000008              glad_glMultiDrawElements
+00000000000240d0 g     F .text	000000000000001a              _glfwInputMonitorWindow
+0000000000000000       F *UND*	0000000000000000              _ZNSaIcEC1Ev@@GLIBCXX_3.4
+0000000000000000       F *UND*	0000000000000000              strcat@@GLIBC_2.2.5
+000000000006a520 g     O .bss	0000000000000008              glad_glVertexP2ui
+00000000000695d8 g     O .bss	0000000000000008              glad_glGetBooleanv
+0000000000069e88 g     O .bss	0000000000000008              glad_glScissorIndexed
+0000000000000000       F *UND*	0000000000000000              XGetWindowAttributes
+0000000000000000       F *UND*	0000000000000000              XkbSetDetectableAutoRepeat
+00000000000241b0 g     F .text	0000000000000063              _glfwAllocGammaArrays
+0000000000068f80 g     O .bss	0000000000000004              GLAD_GL_VERSION_4_0
+0000000000000000       F *UND*	0000000000000000              XGetKeyboardMapping
+0000000000069f48 g     O .bss	0000000000000008              glad_glTexImage1D
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm@@GLIBCXX_3.4.21
+0000000000017606  w    F .text	000000000000000f              _ZN9__gnu_cxx13new_allocatorIjED2Ev
+000000000006a4a0 g     O .bss	0000000000000008              glad_glVertexAttribL3d
+0000000000069458 g     O .bss	0000000000000008              glad_glDrawTransformFeedbackInstanced
+000000000003bbc0 g     F .text	0000000000000005              __libc_csu_fini
+00000000000691d8 g     O .bss	0000000000000008              glad_glColorP4ui
+0000000000035e60 g     F .text	0000000000000096              _glfwPlatformCreateMutex
+0000000000069380 g     O .bss	0000000000000008              glad_glDepthRange
+0000000000033970 g     F .text	00000000000000a5              _glfwPlatformSetCursorPos
+0000000000069d88 g     O .bss	0000000000000008              glad_glProgramUniformMatrix3dv
+00000000000178c6  w    F .text	0000000000000066              _ZNSt12_Vector_baseI6VertexSaIS0_EEC2EmRKS1_
+00000000000697c0 g     O .bss	0000000000000008              glad_glGetSamplerParameterfv
+0000000000069c70 g     O .bss	0000000000000008              glad_glProgramUniform1fv
+0000000000069038 g     O .bss	0000000000000008              glad_glBindRenderbuffer
+000000000006a438 g     O .bss	0000000000000008              glad_glVertexAttribI4i
+0000000000069f40 g     O .bss	0000000000000008              glad_glTexCoordP4uiv
+000000000006a458 g     O .bss	0000000000000008              glad_glVertexAttribI4ui
+0000000000069af8 g     O .bss	0000000000000008              glad_glMultiDrawElementsBaseVertex
+000000000006a000 g     O .bss	0000000000000008              glad_glTextureParameterIuiv
+0000000000028150 g     F .text	000000000000008b              glfwHideWindow
+0000000000018376  w    F .text	000000000000000e              _ZSt19__iterator_categoryIPKjENSt15iterator_traitsIT_E17iterator_categoryERKS3_
+0000000000024680 g     F .text	000000000000009a              glfwGetMonitors
+0000000000069db8 g     O .bss	0000000000000008              glad_glProgramUniformMatrix4dv
+0000000000069cb0 g     O .bss	0000000000000008              glad_glProgramUniform2fv
+0000000000069768 g     O .bss	0000000000000008              glad_glGetQueryBufferObjectui64v
+0000000000015e43  w    F .text	0000000000000012              _ZNSt14numeric_limitsIfE7epsilonEv
+000000000006a3b0 g     O .bss	0000000000000008              glad_glVertexAttrib4usv
+000000000001653e  w    F .text	000000000000011f              _ZNSt6vectorI6VertexSaIS0_EEC1ERKS2_
+0000000000000000       F *UND*	0000000000000000              pthread_setspecific@@GLIBC_2.2.5
+0000000000068f30 g     O .bss	0000000000000008              _ZN7Display6windowE
+00000000000167b4  w    F .text	0000000000000047              _ZN3glm3vecILi3EfLNS_9qualifierE0EEC2IdddEET_T0_T1_
+0000000000020790 g     F .text	0000000000000111              glfwGetInputMode
+000000000001fd30 g     F .text	00000000000000b6              glfwGetError
+0000000000069750 g     O .bss	0000000000000008              glad_glGetProgramiv
+00000000000690e8 g     O .bss	0000000000000008              glad_glBufferStorage
+000000000006a468 g     O .bss	0000000000000008              glad_glVertexAttribI4usv
+0000000000024150 g     F .text	0000000000000054              _glfwFreeGammaArrays
+0000000000069490 g     O .bss	0000000000000008              glad_glEndConditionalRender
+0000000000069cb8 g     O .bss	0000000000000008              glad_glProgramUniform2i
+000000000002ac40 g     F .text	00000000000002fa              _glfwPlatformTerminate
+00000000000694f8 g     O .bss	0000000000000008              glad_glFramebufferTexture2D
+0000000000000000       F *UND*	0000000000000000              dlsym@@GLIBC_2.2.5
+0000000000069608 g     O .bss	0000000000000008              glad_glGetCompressedTextureImage
+00000000000690d0 g     O .bss	0000000000000008              glad_glBlitFramebuffer
+0000000000016386  w    F .text	000000000000001f              _ZNSaIjED1Ev
+0000000000027150 g     F .text	0000000000000082              glfwWindowShouldClose
+00000000000696f0 g     O .bss	0000000000000008              glad_glGetPointerv
+000000000006a4c8 g     O .bss	0000000000000008              glad_glVertexAttribLPointer
+0000000000069e80 g     O .bss	0000000000000008              glad_glScissorArrayv
+000000000002d9e0 g     F .text	000000000000000a              _glfwPlatformFreeMonitor
+0000000000027720 g     F .text	0000000000000189              glfwSetWindowSizeLimits
+0000000000069240 g     O .bss	0000000000000008              glad_glCopyImageSubData
+00000000000161c8  w    F .text	0000000000000034              _ZN3glm6detail11compute_absIfLb1EE4callEf
+0000000000015e94  w    F .text	0000000000000054              _ZN3glm3vecILi4EfLNS_9qualifierE0EEC1IfiiiEET_T0_T1_T2_
+0000000000000000       F *UND*	0000000000000000              __libc_start_main@@GLIBC_2.2.5
+000000000006a538 g     O .bss	0000000000000008              glad_glVertexP3uiv
+0000000000020270 g     F .text	0000000000000069              _glfwInputJoystick
+0000000000039940 g     F .text	0000000000000154              _glfwChooseVisualEGL
+0000000000069cc8 g     O .bss	0000000000000008              glad_glProgramUniform2ui
+0000000000015def  w    F .text	0000000000000054              _ZNSt11char_traitsIcE6lengthEPKc
+000000000006a018 g     O .bss	0000000000000008              glad_glTextureParameteri
+0000000000069c18 g     O .bss	0000000000000008              glad_glPointSize
+0000000000069fd0 g     O .bss	0000000000000008              glad_glTexSubImage2D
+0000000000028f40 g     F .text	00000000000000ac              glfwSetWindowMaximizeCallback
+000000000001908c  w    F .text	0000000000000050              _ZSt4copyIPKjPjET0_T_S4_S3_
+0000000000069958 g     O .bss	0000000000000008              glad_glGetnHistogram
+0000000000018c5a  w    F .text	0000000000000031              _ZNSt20__uninitialized_copyILb1EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEEPjEET0_T_SC_SB_
+00000000000697d8 g     O .bss	0000000000000008              glad_glGetShaderPrecisionFormat
+0000000000018ed6  w    F .text	000000000000001e              _ZNSt16allocator_traitsISaIjEE8max_sizeERKS0_
+0000000000024b70 g     F .text	000000000000007e              glfwSetMonitorUserPointer
+000000000006a2b0 g     O .bss	0000000000000008              glad_glVertexAttrib1fv
+000000000006a060 g     O .bss	0000000000000008              glad_glTextureSubImage3D
+0000000000000000  w      *UND*	0000000000000000              __gmon_start__
+0000000000037be0 g     F .text	0000000000000088              glfwGetGLXWindow
+0000000000069570 g     O .bss	0000000000000008              glad_glGetActiveAtomicCounterBufferiv
+0000000000018d92  w    F .text	0000000000000013              _ZN9__gnu_cxx13new_allocatorI6VertexEC1ERKS2_
+0000000000069420 g     O .bss	0000000000000008              glad_glDrawElementsInstanced
+0000000000069f88 g     O .bss	0000000000000008              glad_glTexParameterfv
+0000000000069c58 g     O .bss	0000000000000008              glad_glProgramUniform1d
+0000000000027020 g     F .text	0000000000000127              glfwWindowHintString
+000000000003a780 g     F .text	0000000000000134              glfwGetOSMesaColorBuffer
+0000000000069d40 g     O .bss	0000000000000008              glad_glProgramUniform4iv
+00000000000696c0 g     O .bss	0000000000000008              glad_glGetNamedBufferSubData
+0000000000000000       F *UND*	0000000000000000              XGetSelectionOwner
+00000000000217c0 g     F .text	00000000000000ac              glfwSetMouseButtonCallback
+0000000000000000       F *UND*	0000000000000000              qsort@@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              XCloseDisplay
+0000000000028d30 g     F .text	00000000000000ac              glfwSetWindowRefreshCallback
+0000000000000000       F *UND*	0000000000000000              XSync
+0000000000000000  w      *UND*	0000000000000000              _ITM_registerTMCloneTable
+000000000006a088 g     O .bss	0000000000000008              glad_glUniform1d
+0000000000000000       F *UND*	0000000000000000              XMapRaised
+0000000000000000       F *UND*	0000000000000000              XQLength
+0000000000022580 g     F .text	0000000000000070              glfwSetJoystickCallback
+00000000000691c0 g     O .bss	0000000000000008              glad_glColorMaski
+000000000006a400 g     O .bss	0000000000000008              glad_glVertexAttribI2ui
+00000000000192fd  w    F .text	0000000000000012              _ZSt12__niter_baseIP6VertexET_S2_
+00000000000368f0 g     F .text	0000000000000040              _glfwTerminateGLX
+0000000000069fb8 g     O .bss	0000000000000008              glad_glTexStorage3D
+0000000000069df0 g     O .bss	0000000000000008              glad_glPushDebugGroup
+0000000000069890 g     O .bss	0000000000000008              glad_glGetTransformFeedbackVarying
+0000000000020070 g     F .text	00000000000000b9              _glfwInputMouseClick
+000000000002d880 g     F .text	000000000000015c              _glfwRestoreVideoModeX11
+0000000000024950 g     F .text	00000000000000d0              glfwGetMonitorPhysicalSize
+000000000006a0f8 g     O .bss	0000000000000008              glad_glUniform2ui
+000000000001915c  w    F .text	0000000000000012              _ZSt12__miter_baseIN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEEET_S8_
+0000000000017a9c  w    F .text	0000000000000066              _ZNSt12_Vector_baseIjSaIjEEC1EmRKS0_
+0000000000000000       F *UND*	0000000000000000              close@@GLIBC_2.2.5
+0000000000069328 g     O .bss	0000000000000008              glad_glDeleteProgramPipelines
+0000000000027bc0 g     F .text	00000000000000b3              glfwGetWindowContentScale
+0000000000022130 g     F .text	000000000000013b              glfwGetJoystickName
+000000000006a280 g     O .bss	0000000000000008              glad_glVertexArrayElementBuffer
+0000000000069aa8 g     O .bss	0000000000000008              glad_glMapBufferRange
+0000000000027260 g     F .text	00000000000000ae              glfwSetWindowTitle
+0000000000000000       F *UND*	0000000000000000              _ZNK14EngineGraphics6Shader3useEv
+0000000000069690 g     O .bss	0000000000000008              glad_glGetInternalformati64v
+0000000000068f48 g     O .bss	0000000000000008              GLVersion
+0000000000069ce0 g     O .bss	0000000000000008              glad_glProgramUniform3dv
+0000000000069540 g     O .bss	0000000000000008              glad_glGenSamplers
+00000000000342a0 g     F .text	0000000000000058              _glfwPlatformCreateCursor
+0000000000069998 g     O .bss	0000000000000008              glad_glGetnPolygonStipple
+0000000000000000       F *UND*	0000000000000000              _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm@@GLIBCXX_3.4.21
+000000000006a0d8 g     O .bss	0000000000000008              glad_glUniform2f
+00000000000256d0 g     F .text	000000000000002e              _glfwTerminateVulkan
+0000000000069de8 g     O .bss	0000000000000008              glad_glProvokingVertex
+0000000000069d20 g     O .bss	0000000000000008              glad_glProgramUniform4dv
+00000000000206e0 g     F .text	000000000000005c              _glfwFreeJoystick
+0000000000000000       F *UND*	0000000000000000              XCheckIfEvent
+00000000000690a8 g     O .bss	0000000000000008              glad_glBlendEquationi
+000000000006a240 g     O .bss	0000000000000008              glad_glUseProgramStages
+000000000001645a  w    F .text	0000000000000048              _ZNSt6vectorIjSaIjEED2Ev
+0000000000020f70 g     F .text	0000000000000107              glfwGetCursorPos
+000000000003b430 g     F .text	00000000000000d4              _glfwTerminateJoysticksLinux
+00000000000161fc  w    F .text	000000000000002e              _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
+0000000000068ea0 g     O .bss	0000000000000040              view
+0000000000026070 g     F .text	000000000000003e              _glfwInputWindowIconify
+0000000000000000       F *UND*	0000000000000000              _ZNSt8ios_base4InitD1Ev@@GLIBCXX_3.4
+000000000003aa00 g     F .text	0000000000000088              glfwGetOSMesaContext
+0000000000018fbc  w    F .text	0000000000000050              _ZSt4copyIN9__gnu_cxx17__normal_iteratorIPKjSt6vectorIjSaIjEEEEPjET0_T_SA_S9_
+
+
